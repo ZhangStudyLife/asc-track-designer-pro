@@ -1,0 +1,37 @@
+{
+  "name": "测试赛道",
+  "version": "1.0",
+  "pieces": [
+    {
+      "id": 1,
+      "type": "straight",
+      "params": {
+        "length": 100
+      },
+      "x": 0,
+      "y": 0,
+      "rotation": 0
+    },
+    {
+      "id": 2,
+      "type": "curve",
+      "params": {
+        "radius": 50,
+        "angle": 90
+      },
+      "x": 200,
+      "y": 0,
+      "rotation": 0
+    },
+    {
+      "id": 3,
+      "type": "straight",
+      "params": {
+        "length": 50
+      },
+      "x": 200,
+      "y": 100,
+      "rotation": 90
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[Unit]
+Description=ASC Track Designer Service
+Documentation=https://github.com/asc-lab/track-designer
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/asc-track-designer
+ExecStart=/opt/asc-track-designer/trackd --port 8080 --data /opt/asc-track-designer/data
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=asc-track-designer
+
+# 安全设置
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/asc-track-designer/data
+
+# 资源限制
+LimitNOFILE=65536
+MemoryLimit=512M
+
+[Install]
+WantedBy=multi-user.target

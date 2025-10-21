@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir F:ASC_track)",
+      "Bash(dir:*)",
+      "Read(//f/ASC_track/asc-track-designer/**)",
+      "Bash(npm run build:*)",
+      "Bash(go build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

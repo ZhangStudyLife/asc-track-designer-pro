@@ -1,0 +1,8 @@
+.git
+.vscode
+node_modules
+web/node_modules
+data
+*.exe
+*.log
+.DS_Store

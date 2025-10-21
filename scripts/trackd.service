@@ -1,0 +1,18 @@
+[Unit]
+Description=ASC Track Designer Service
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/trackd
+ExecStart=/opt/trackd/trackd --port 8080 --data /opt/trackd/data
+Restart=always
+RestartSec=5
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
