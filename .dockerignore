@@ -1,8 +1,74 @@
-.git
-.vscode
-node_modules
-web/node_modules
-data
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules
+node_modules/
+web/node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Go vendor
+vendor/
+
+# Build outputs
+dist/
+build/
+web/dist/
 *.exe
+trackd
+
+# Data and logs
+data/
+*.db
+*.db-shm
+*.db-wal
 *.log
+*.tmp
+
+# OS files
 .DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test and coverage
+*_test.go
+*.test
+coverage/
+
+# Documentation
+*.md
+docs/
+LICENSE
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Docker
+docker-compose*.yml
+.dockerignore
+
+# Scripts
+scripts/
+*.bat
+*.sh
+
+# Temporary
+nul
+*.bak
+*.backup
