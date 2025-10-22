@@ -1,0 +1,1031 @@
+{
+  "numStartups": 63,
+  "installMethod": "global",
+  "autoUpdates": true,
+  "hasSeenTasksHint": true,
+  "tipsHistory": {
+    "ide-hotkey": 14,
+    "new-user-warmup": 7,
+    "plan-mode-for-complex-tasks": 57,
+    "memory-command": 49,
+    "shift-enter": 60,
+    "theme-command": 49,
+    "status-line": 57,
+    "prompt-queue": 24,
+    "enter-to-steer-in-relatime": 49,
+    "todo-list": 49,
+    "# for memory": 60,
+    "install-github-app": 61,
+    "drag-and-drop-images": 62,
+    "double-esc": 6,
+    "continue": 63,
+    "shift-tab": 52,
+    "image-paste": 49,
+    "double-esc-code-restore": 62,
+    "custom-agents": 53,
+    "tab-toggle-thinking": 57,
+    "ultrathink-keyword": 57,
+    "permissions": 56,
+    "custom-commands": 61,
+    "git-worktrees": 63
+  },
+  "promptQueueUseCount": 231,
+  "showExpandedTodos": true,
+  "cachedStatsigGates": {
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_use_file_checkpoints": true,
+    "tengu_tool_pear": false
+  },
+  "cachedDynamicConfigs": {
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    }
+  },
+  "firstStartTime": "2025-09-25T17:54:53.668Z",
+  "userID": "c639f947fb9aae2490ff283a976b37e5868b6eda8e15dd4b805d55c5e7893ffe",
+  "projects": {
+    "C:\\Users\\zyz": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "/exit ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/mcp ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/mcp list",
+          "pastedContents": {}
+        },
+        {
+          "display": "chat",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好吗",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好吗",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好啊",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        },
+        {
+          "display": "为什么一直连接不上",
+          "pastedContents": {}
+        },
+        {
+          "display": "nihao",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit ",
+          "pastedContents": {}
+        },
+        {
+          "display": "nihao",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model \n`",
+          "pastedContents": {}
+        },
+        {
+          "display": "nihao",
+          "pastedContents": {}
+        },
+        {
+          "display": "sk-ds9lUj114tmOOah9RcusVIdUgLdIWZJkIcwBr4AROrfi4RaN",
+          "pastedContents": {}
+        },
+        {
+          "display": "我自己组装了一台nas , 部分二手货,部分是一手货,以下是配置单:利民TL-B6B机箱风扇 B6W*2,Samsung/三星PM981a 256GBSSD,国行盒装Seagate/希捷\n8TB:国行希捷酷狼 8TB【ST8000VNO04,13 8100T,TT电源TRM SFX 350W钢影... ￥159.00x个\nTRM SFX 350W 直出 三年换新,冰曼MC45下压式6热管CPU... ￥74.87\nMC45-6 白色彩灯【6热管】,磐石 B250itx群晖nas可替b3... ￥278.00\n可换 B250-ITX【单主板】,内存二手金士顿16GB单条.想要装飞牛OS,请你帮我分析一下可玩性和实用性,Docker应用推荐,生成一篇非常实用的文档到根目录下面,教我从装机->安装系统->到飞牛OS的基础使用和进阶使用,让我将这个nas利用到极限!",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "d:\\Downloads\\第二次电控任务.docx 请你研究一下这个ASC电控第二次考核任务 , 并进行一定程度的修改和润色 , 要求后面出一道基于前面的提高题目 , 然后语言润色合理",
+          "pastedContents": {}
+        },
+        {
+          "display": "why",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        },
+        {
+          "display": "/flow-new \"REQ-123|用户下单支持\"",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\n// 定义菜单模式\ntypedef enum { NORMAL_MODE, CHANGE_MODE } MenuMode;\n\n// 定义菜单项类型\ntypedef enum { SUBMENU, PARAMETER, FUNCTION } ItemType;\n\n// 定义功能类型\ntypedef enum { LED_TEST, SHOW_TRIANGLE } FunctionType;\n\n// 菜单结构体定义\ntypedef struct MenuItem {\n    char* name;\n    ItemType type;\n    union {\n        // 子菜单数据\n        struct {\n            struct MenuItem** children;\n            int childCount;\n        } submenu;\n        // 参数项数据（指向参数值的指针）\n        int* paramValue;\n        // 功能项数据\n        FunctionType func;\n    } data;\n} MenuItem;\n\n// 创建子菜单\nMenuItem* createSubmenu(const char* name) {\n    MenuItem* item = (MenuItem*)malloc(sizeof(MenuItem));\n    item->name = (char*)malloc(strlen(name) + 1);\n    strcpy(item->name, name);\n    item->type = SUBMENU;\n    item->data.submenu.children = NULL;\n    item->data.submenu.childCount = 0;\n    return item;\n}\n\n// 创建参数项\nMenuItem* createParameter(const char* name, int* paramPtr) {\n    MenuItem* item = (MenuItem*)malloc(sizeof(MenuItem));\n    item->name = (char*)malloc(strlen(name) + 1);\n    strcpy(item->name, name);\n    item->type = PARAMETER;\n    item->data.paramValue = paramPtr;\n    return item;\n}\n\n// 创建功能项\nMenuItem* createFunction(const char* name, FunctionType func) {\n    MenuItem* item = (MenuItem*)malloc(sizeof(MenuItem));\n    item->name = (char*)malloc(strlen(name) + 1);\n    strcpy(item->name, name);\n    item->type = FUNCTION;\n    item->data.func = func;\n    return item;\n}\n\n// 为子菜单添加子项\nvoid addChild(MenuItem* parent, MenuItem* child) {\n    parent->data.submenu.childCount++;\n    parent->data.submenu.children = (MenuItem**)realloc(\n        parent->data.submenu.children,\n        parent->data.submenu.childCount * sizeof(MenuItem*)\n    );\n    parent->data.submenu.children[parent->data.submenu.childCount - 1] = child;\n}\n\n// 显示当前菜单\nvoid displayMenu(MenuItem* currentMenu, int selectedIndex, MenuMode mode) {\n    // 显示模式\n    if (mode == NORMAL_MODE) {\n        printf(\"[normal mode]\\n\");\n    } else {\n        printf(\"[change mode]\\n\");\n    }\n    \n    // 显示菜单标题\n    printf(\"=== %s ===\\n\", currentMenu->name);\n    \n    // 显示菜单项\n    for (int i = 0; i < currentMenu->data.submenu.childCount; i++) {\n        MenuItem* item = currentMenu->data.submenu.children[i];\n        // 显示选中标记\n        if (i == selectedIndex) {\n            printf(\"-> \");\n        } else {\n            printf(\"   \");\n        }\n        \n        // 根据项类型显示内容\n        if (item->type == PARAMETER) {\n            printf(\"%s: %d\\n\", item->name, *(item->data.paramValue));\n        } else {\n            printf(\"%s\\n\", item->name);\n        }\n    }\n}\n\n// 释放菜单内存\nvoid freeMenu(MenuItem* menu) {\n    if (menu == NULL) return;\n    \n    // 释放子项\n    if (menu->type == SUBMENU) {\n        for (int i = 0; i < menu->data.submenu.childCount; i++) {\n            freeMenu(menu->data.submenu.children[i]);\n        }\n        free(menu->data.submenu.children);\n    }\n    \n    // 释放名称\n    free(menu->name);\n    free(menu);\n}\n\n// 显示三角形\nvoid showTriangle() {\n    printf(\"  *\\n\");\n    printf(\" ***\\n\");\n    printf(\"*****\\n\");\n}\n\nint main() {\n    // 初始化参数变量\n    int ledSpeed = 0;\n    int ledDirection = 0;\n    int kp = 0;\n    int ki = 0;\n    int kd = 0;\n    \n    // 构建菜单结构\n    // 主菜单\n    MenuItem* mainMenu = createSubmenu(\"Main Menu\");\n    \n    // LED Control 菜单及其子项\n    MenuItem* ledControl = createSubmenu(\"LED Control\");\n    addChild(ledControl, createParameter(\"LED_Speed\", &ledSpeed));\n    addChild(ledControl, createParameter(\"LED_Direction\", &ledDirection));\n    addChild(ledControl, createFunction(\"LED_Test\", LED_TEST));\n    \n    // Image 菜单及其子项\n    MenuItem* imageMenu = createSubmenu(\"Image\");\n    addChild(imageMenu, createFunction(\"Show Triangle\", SHOW_TRIANGLE));\n    \n    // PID 菜单及其子项\n    MenuItem* pidMenu = createSubmenu(\"PID\");\n    addChild(pidMenu, createParameter(\"KP\", &kp));\n    addChild(pidMenu, createParameter(\"KI\", &ki));\n    addChild(pidMenu, createParameter(\"KD\", &kd));\n    \n    // 将子菜单添加到主菜单\n    addChild(mainMenu, ledControl);\n    addChild(mainMenu, imageMenu);\n    addChild(mainMenu, pidMenu);\n    \n    // 导航状态变量\n    MenuItem* path[10];          // 菜单路径\n    int selectedIndices[10];     // 每个菜单级别的选中索引\n    int pathDepth = 0;           // 当前路径深度\n    MenuMode mode = NORMAL_MODE; // 当前模式\n    \n    // 初始状态\n    path[pathDepth] = mainMenu;\n    selectedIndices[pathDepth] = 0;\n    pathDepth++;\n    \n    // 显示初始菜单\n    displayMenu(path[pathDepth - 1], selectedIndices[pathDepth - 1], mode);\n    \n    // 读取输入\n    char input[1000];\n    fgets(input, sizeof(input), stdin);\n    \n    // 处理每个输入命令\n    char* token = strtok(input, \" \\n\");\n    while (token != NULL) {\n        // 退出程序\n        if (strcmp(token, \"0\") == 0) {\n            printf(\"Program exited\\n\");\n            break;\n        }\n        \n        // 无效输入处理\n        if (strcmp(token, \"W\") != 0 && strcmp(token, \"S\") != 0 &&\n            strcmp(token, \"A\") != 0 && strcmp(token, \"D\") != 0 &&\n            strcmp(token, \"+\") != 0 && strcmp(token, \"-\") != 0) {\n            printf(\"Invalid input\\n\");\n            token = strtok(NULL, \" \\n\");\n            continue;\n        }\n        \n        // 获取当前菜单和选中索引\n        MenuItem* currentMenu = path[pathDepth - 1];\n        int currentIndex = selectedIndices[pathDepth - 1];\n        \n        // 处理W键（上移）\n        if (strcmp(token, \"W\") == 0) {\n            currentIndex = (currentIndex - 1 + currentMenu->data.submenu.childCount) % \n                          currentMenu->data.submenu.childCount;\n            selectedIndices[pathDepth - 1] = currentIndex;\n        }\n        // 处理S键（下移）\n        else if (strcmp(token, \"S\") == 0) {\n            currentIndex = (currentIndex + 1) % currentMenu->data.submenu.childCount;\n            selectedIndices[pathDepth - 1] = currentIndex;\n        }\n        // 处理A键\n        else if (strcmp(token, \"A\") == 0) {\n            if (mode == NORMAL_MODE) {\n                MenuItem* selectedItem = currentMenu->data.submenu.children[currentIndex];\n                switch (selectedItem->type) {\n                    case SUBMENU:\n                        // 进入子菜单\n                        path[pathDepth] = selectedItem;\n                        selectedIndices[pathDepth] = 0;\n                        pathDepth++;\n                        break;\n                    case PARAMETER:\n                        // 进入编辑模式\n                        mode = CHANGE_MODE;\n                        break;\n                    case FUNCTION:\n                        // 执行功能\n                        if (selectedItem->data.func == LED_TEST) {\n                            printf(\"LED OK\\n\");\n                        } else if (selectedItem->data.func == SHOW_TRIANGLE) {\n                            showTriangle();\n                        }\n                        break;\n                }\n            } else {\n                // 退出编辑模式\n                mode = NORMAL_MODE;\n            }\n        }\n        // 处理D键\n        else if (strcmp(token, \"D\") == 0) {\n            if (mode == NORMAL_MODE) {\n                // 返回上一级菜单\n                if (pathDepth > 1) {\n                    pathDepth--;\n                }\n            } else {\n                // 退出编辑模式\n                mode = NORMAL_MODE;\n            }\n        }\n        // 处理+键（参数加1）\n        else if (strcmp(token, \"+\") == 0) {\n            if (mode == CHANGE_MODE) {\n                MenuItem* selectedItem = currentMenu->data.submenu.children[currentIndex];\n                if (selectedItem->type == PARAMETER) {\n                    *(selectedItem->data.paramValue) += 1;\n                } else {\n                    printf(\"Invalid input\\n\");\n                    token = strtok(NULL, \" \\n\");\n                    continue;\n                }\n            } else {\n                printf(\"Invalid input\\n\");\n                token = strtok(NULL, \" \\n\");\n                continue;\n            }\n        }\n        // 处理-键（参数减1）\n        else if (strcmp(token, \"-\") == 0) {\n            if (mode == CHANGE_MODE) {\n                MenuItem* selectedItem = currentMenu->data.submenu.children[currentIndex];\n                if (selectedItem->type == PARAMETER) {\n                    *(selectedItem->data.paramValue) -= 1;\n                } else {\n                    printf(\"Invalid input\\n\");\n                    token = strtok(NULL, \" \\n\");\n                    continue;\n                }\n            } else {\n                printf(\"Invalid input\\n\");\n                token = strtok(NULL, \" \\n\");\n                continue;\n            }\n        }\n        \n        // 显示更新后的菜单\n        displayMenu(path[pathDepth - 1], selectedIndices[pathDepth - 1], mode);\n        \n        // 获取下一个命令\n        token = strtok(NULL, \" \\n\");\n    }\n    \n    // 释放内存\n    freeMenu(mainMenu);\n    return 0;\n}\nZHEFEN1\b\\\n\n\u0003\u0003\u0003\n\n\n\n\u0003",
+          "pastedContents": {}
+        },
+        {
+          "display": "再次进行修改 还是错误的 严格看每一个测试带你!",
+          "pastedContents": {}
+        },
+        {
+          "display": "你看看这个测试点 然后重新进行修改代码 并且优化题目的描述!",
+          "pastedContents": {}
+        },
+        {
+          "display": "#    状态分数    耗时    内存占用\n#1     Accepted12        Wrong Answer 0On line 18: Read LED, expect ->ms    256 KiB\n#3     Accepted12    1ms    360 KiB\n12    1ms    256 KiB\n#5     Accepted13    1ms    2g Answer 0On line 16: Read [change, expect [normal.    1ms    412 KiB\n#7     Wrong Answer 0On line 7ormal, expect Invalid.    1ms    504 KiB\n#8     Ac1ms    256 KiBcepted13    : Read [n56 KiB\n#6     Wron#4     Accepted.    1 1ms    348 KiB\n#2",
+          "pastedContents": {}
+        },
+        {
+          "display": "[normal mode]\n=== Main Menu ===\n-> LED Control\n   Image\n   PID\n[normal mode]\n=== LED Control ===\n-> LED_Speed: 0\n   LED_Direction: 0\n   LED_Test\n[change mode]\n=== LED Control ===\n-> LED_Speed: 0\n   LED_Direction: 0\n   LED_Test\n[change mode]\n=== LED Control ===\n-> LED_Speed: 1\n   LED_Direction: 0\n   LED_Test\n[change mode]\n=== LED Control ===\n-> LED_Speed: 2\n   LED_Direction: 0\n   LED_Test\n[change mode]\n=== LED Control ===\n-> LED_Speed: 1\n   LED_Direction: 0\n   LED_Test\n[normal mode]\n=== LED Control ===\n-> LED_Speed: 1\n   LED_Direction: 0\n   LED_Test\n[normal mode]\n=== Main Menu ===\n-> LED Control\n   Image\n   PID\n[normal mode]\n=== Main Menu ===\n   LED Control\n-> Image\n   PID\n[normal mode]\n=== Image ===\n-> Show Triangle\n  *\n ***\n*****\n[normal mode]\n=== Image ===\n-> Show Triangle\nProgram exited 展示图片是有三角星星的",
+          "pastedContents": {}
+        },
+        {
+          "display": "#659. 菜单系统进阶版\nID: 659\n传统题\n1000ms\n256MiB\n尝试: 8\n已通过: 2\n难度: 10\n上传者:\n\nzero\n标签>\n题目描述\n在智能车中，菜单系统对于调车来说是十分重要的，它可以帮助我们快速调节参数，同时显示图像，为我们节省很多时间，提高我们的调车效率，现在需要实现一个智能车控制系统的菜单交互程序，支持多级菜单导航、参数调整和特定功能执行，具体要求如下：\n\n菜单结构：\n主菜单（Main Menu）包含 3 个子菜单：\n\nLED Control\nImage\nPID\n\nLED Control 菜单包含 3 个选项：\n\nLED_Speed: X（X 为整数参数，初始值 0）\nLED_Direction: Y（Y 为整数参数，初始值 0）\nLED_Test（执行特定功能）\n\nImage 菜单包含 1 个选项：\n\nShow Triangle（显示由 * 组成的高度为 3 的等边三角形）\n\n\nPID 菜单包含 3 个参数选项：\n\nKP: P（P 为整数参数，初始值 0）\nKI: I（I 为整数参数，初始值 0）\nKD: D（D 为整数参数，初始值 0）\n\n的等边三角形（由 * 组成），然后显示当前菜单\n\n初始状态：主菜单（Main Menu），指针指向第一个选项 \"LED Control\"。\n\n输入格式\n每次输入一个字符，有效输入为\n'W'、'S'、'A'、'D'、'+'、'-'、'0'。\n\n输出格式\n普通模式显示：\n第一行：\"[normal mode]\"\n第二行：菜单标题，格式为 \"=== 菜单名称 ===\"\n后续行：菜单项，选中项前显示 \"->\"，未选中项前显示 \" \" 参数项显示当前值，格式为 \"参数名称：值\"\n编辑模式显示：\n第一行：\"[change mode]\"\n第二行：菜单标题，格式同上\n后续行：菜单项显示格式同上\n特殊输出：\n选择 LED_Test 后，输出 \"LED OK\"，然后显示当前菜单\n选择 Show Triangle 后，显示 3 行等边三角形图案，然后显示当前菜单\n输入无效字符时，输出 \"Invalid input\"\n退出程序时，输出 \"Program exited\"\n\n样例\n输入数据 1\nA A + + - A D S A A 0\n输出数据 1\n[normal mode]\n=== Main Menu ===\n-> LED Control\n   Image\n   PID\n[nor   LED_Test\n[change mode]\n=== LED Control ===\n-> LED_Speed: 2\n   LED_Direction: 0\n   LED_Test\n[change mode]\n=== LED Control ===\n-> LED_Speed: 1\n   LED_Direction: 0\n   LED_Test\n[normal mode]\n=== LED Control ===\n-> LED_Speed: 1\n   LED_Direction: 0\n   LED_Test\n[normal mode]\n=== Main Menu ===\n-> LED Control\n   Image\n   PID\n[normal mode]\n=== Main Menu ===\n   LED Control\n-> Image\n   PID\n[normal mode]\n=== Image ===\n-> Show Triangle\n  *\n ***\n*****\n[normal mode]\n=== Image ===\n-> Show Triangle\nProgram exited 解决这道C语言OJ题目",
+          "pastedContents": {}
+        },
+        {
+          "display": "/config ",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {
+        "chrome-devtools": {
+          "command": "cmd",
+          "type": "stdio",
+          "args": ["/c", "npx", "chrome-devtools-mcp@latest"],
+          "mode": "stdio",
+          "env": {}
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 4,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastTotalWebSearchRequests": 0
+    },
+    "F:\\2025_2026Study\\bike": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "你是一个专业的全国大学生智能汽车竞赛的选手,现在有这么一辆车模,前轮是舵机控制方向,后轮是一个无刷电机,然后用一个动量轮来控制摩托车的平衡,其中你帮我研究一下当前这份工程的代码结构,主控是STM32f103C8t6,但是库函数我不一定觉得写的是正确的,从OLED到各个模块的驱动,以及MPU6050的解算,我想你帮我逐步测试各个模块的代码,例如写一堆函数然后注释掉,然后每次测试的时候都分别解除注释一个,然后我希望你帮我研究正确的动量轮的串级pid来控制小车的平衡,外环角度环,响应慢,内环角速度环,响应更快,然后角速度环和角度环的定时中断你帮我好好的研究",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false
+    },
+    "f:\\seekfree_monitor": {
+      "allowedTools": [],
+      "history": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false
+    },
+    "D:\\CYT2BL3_MyWorkSpace": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "请你再次进行非常非常非常详细的深度的思考,模拟芯片去运行这些菜单函数,尝试去读取模拟的flash,进入ultra think 然后检查是否有可能报错导致非常严重的错误",
+          "pastedContents": {}
+        },
+        {
+          "display": "不是的 我的意思不是5次融合成为一次 , 那也太低级了 , 我的想法是哪肯定最好滤波效果越来越好 , 同时延迟越小越好 你再研究研究这几种滤波算法哪种更好",
+          "pastedContents": {}
+        },
+        {
+          "display": "那么是否可以理解巴特沃斯就是二阶低通滤波呢 我记得一阶低通滤波可以用rc硬件滤波这个硬件模型,那巴特沃斯呢",
+          "pastedContents": {}
+        },
+        {
+          "display": "可以给我详细讲解一下巴特沃斯滤波器的原理吗 用高中生能听懂的话",
+          "pastedContents": {}
+        },
+        {
+          "display": "不是的 我的意思不是5次融合成为一次 , 那也太低级了 , 我的想法是哪肯定最好滤波效果越来越好 , 同时延迟越小越好 你再研究研究这几种滤波算法哪种更好",
+          "pastedContents": {}
+        },
+        {
+          "display": "你是否完全理解我的意思了呢 我的意思是 我每1ms都会拿去一次角速度的数据 , 然后但是我的最内环是5ms才采集一次编码器数据闭环的,那么也就是说如果我不进行滤波 , 那么给5ms的速度环的输入,是参考这5ms内的最后1ms的角速度,所以肯定是最好要滤波的,然后还有截止频率是什么 请你再次详细 ultra think一下,分析各个滤波的效果 , 也最好模拟一下",
+          "pastedContents": {}
+        },
+        {
+          "display": "对于角速度环来说 , 1ms的角速度外环 , 5ms的速度内环 , 那么肯定是1ms拿去的数据数据要进行一定的滤波 , 你查看一下滤波的库 , 里面的滤波的函数 什么最适合角速度这个数据呢",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "对于角速度环来说 , 1ms的角速度外环 , 5ms的速度内环 , 那么肯定是1ms拿去的数据数据要进行一定的滤波 , 你查看一下滤波的库 , 里面的滤波的函数 什么最适合角速度这个数据呢",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "帮我修复菜单的这部分写一个commit,标注(还没有实际编译尝试)",
+          "pastedContents": {}
+        },
+        {
+          "display": "请你再次进行非常非常非常详细的深度的思考,模拟芯片去运行这些菜单函数,尝试去读取模拟的flash,进入ultra think 然后检查是否有可能报错导致非常严重的错误",
+          "pastedContents": {}
+        },
+        {
+          "display": "可以这样 , 请你尝试进行修改 , 确保逻辑不会有问题 不要过度编码 , 简单来 , 但是要求实现功能",
+          "pastedContents": {}
+        },
+        {
+          "display": "会影响之前保存的参数吗",
+          "pastedContents": {}
+        },
+        {
+          "display": "我觉得你这个过于冗余了,又是魔术字,又是版本号,不能搞得简单一点吗,我的期望就是修复新增参数导致的擦除全部扇区的bug,只是希望调用menu_register_param,新增一行就可以新增参数了,不要过度编码和包装,简单高效",
+          "pastedContents": {}
+        },
+        {
+          "display": "请你查看一下我当前的工作区 , 在我调试的时候我发现了菜单存档系统的时候 , 我发现了新增参数导致的bug,我举个例子现在是0-13个共14个索引,当我尝试新增一个15索引的时候,也就是在speed_kd后面一行新增一行参数,但是下载程序进入debug模式之后,就会发生这个falash的指针报错这件事情, 请你帮看看 因为上次从参数数量从3个改为14个,需要清除 上次执行了    // flash_erase_page(0,40);  // Slot 0\n    // flash_erase_page(0,41);  // Slot 1\n    // flash_erase_page(0,42);  // Slot 2\n    // flash_erase_page(0,43);  // Slot 3 然后才可以改为14个参数,那么为什么呢 我不希望每次新增一个参数都会导致我需要擦除全片flash,或者一个扇区的flash,因为已经保存了很多的参数,我希望的是以后新增一个新的参数,只需要新增menu_register_param一行就可以得到增加.请帮我解决找出问题所在地方并尝试进行修复",
+          "pastedContents": {}
+        },
+        {
+          "display": "这个IAR很奇怪,一模一样的代码没有改过 , 但是如果我进入debug,然后reset不是可以选择模式吗,如果是software模式,那么我reset然后再直接运行,没有进入菜单系统,按下stop,发现卡在了// This IRQ occurred because CPU attempted to call IRQ that has not been mapped to user function , 然后接下来我改变reset模式为hardware,然后再次进入就正确进入u菜单系统了.为什么呢",
+          "pastedContents": {}
+        },
+        {
+          "display": "编译是没什么问题的 , 但是下栽进去没有正确进入菜单 , 然后debug模式发现卡死在> void Cy_DefaultUserHandler(void)\n{\n    // This IRQ occurred because CPU attempted to call IRQ that has not been mapped to user function\n    while(1);\n}\n解决报错",
+          "pastedContents": {}
+        },
+        {
+          "display": "void Cy_DefaultUserHandler(void)\n{\n    // This IRQ occurred because CPU attempted to call IRQ that has not been mapped to user function\n    while(1);\n}\n解决报错",
+          "pastedContents": {}
+        },
+        {
+          "display": "    Error[Li005]: no definition for \"CarGO\" ferenced from D:\\CYT2BL3_MyWorkSpace\\project\\iar\\Debug_m4\\Obj\\menu_17417737970845612311.dir\\menu_config.o]        Error[Li005]: no definition for \"CarGO_P [referenced from D:\\CYT2BL3_MyWorkSpace\\project\\iar\\Debug_m4\\Obj\\user_8514941877209965082.dir\\cm4_isr.o]            \nIT\"        \n[re",
+          "pastedContents": {}
+        },
+        {
+          "display": "帮我检查这个Control这个文件夹下面的控制链路是否可能出现bug , 就是肯定错误的bug , 而不是风险性质的 , 然后是否确认和菜单实现了联动 , 也就是可以通过菜单进行这几个环的调节!",
+          "pastedContents": {}
+        },
+        {
+          "display": "为什么这个git里面的motor.c一直无法add也无法撤销更改啊! 帮我在不影响其他的基础上解决这个问题 , Motor.c我就修改了无足轻重的宏定义",
+          "pastedContents": {}
+        },
+        {
+          "display": "请你根据Control文件夹下面的Control.md文档里面的要求,生成具体的代码,要求生成PID.c,PID.h,封装良好的PID的库,都注意一开始编写的时候不需要限幅,不需要过度编码和过度注释!要求生成Control.c,Control.h,里面是具体的控制链路的代码,要求过度封装,易读!不需要过度编码和过度注释!首先遵从我现在跟你说的内容,其余部分参考Control.md",
+          "pastedContents": {}
+        },
+        {
+          "display": "/clear ",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好啊",
+          "pastedContents": {}
+        },
+        {
+          "display": "转向环（外环）\n\n输入：赛道偏移误差（例如摄像头或灰度传感器算出的中心偏移）\n\n输出：左右轮速度差修正量 ΔSpeed\n\n目的是让车头对准赛道中心，输出值正负控制转向方向。\n\n速度环（内环）\n\n输入：目标速度（固定设定或动态调节）\n\n输出：PWM占空比（控制电机速度）\n\n目的是让实际速度跟随目标速度。\n\n每个轮子都有独立PID，目标速度由转向环输出修正：先写好PID这个库函数,然后写好控制链逻辑",
+          "pastedContents": {}
+        },
+        {
+          "display": "/clear ",
+          "pastedContents": {}
+        },
+        {
+          "display": "使用串级PID算法实现小车转向，输入误差为赛道偏移误差，转向环的输出加减到速度环的期望速度上，转向环与速度环均使用经典位置式PID运算。 教教我",
+          "pastedContents": {}
+        },
+        {
+          "display": "/clear ",
+          "pastedContents": {}
+        },
+        {
+          "display": "使用串级PID算法实现小车转向，输入误差为赛道偏移误差，转向环的输出加减到速度环的期望速度上，转向环与速度环均使用经典位置式PID运算。 帮我解释一下啊,教我",
+          "pastedContents": {}
+        },
+        {
+          "display": "我发现仍有其他地方会直接导致输出的err为1你看看image_process这个函数里面其他内容",
+          "pastedContents": {}
+        },
+        {
+          "display": " 在菜单初始化时注册 IMU 零漂为可存档参数（在 menu_config_init 中添加）,然后在子菜单IMU下面修改Show,就是类似于展示零飘的这三个参数就可以了",
+          "pastedContents": {}
+        },
+        {
+          "display": "我发现仍有其他地方会直接导致输出的err为1你看看image_process这个函数里面其他内容",
+          "pastedContents": {}
+        },
+        {
+          "display": "迅速帮我查看有没有image文件夹下面的函数实现,有没有什么地方可能能让err_sum_average返回值为0的 并将其注释掉 迅速回答!",
+          "pastedContents": {}
+        },
+        {
+          "display": "Fault exception viewer\nHardFault exception.\nThe processor has escalated a configurable-priority exception to HardFault.A precise data access error has occurred (CFSR.PRECISERR, BFAR)At data address 0x14005000.\nException occurred atPC=0x1008568e,LR=0x1008567dSee the call stack for more information. 还是有报错 ,我在根目录下面放了一个文件夹名为\"example\",里面都是示例代码,这个文件夹内所有的文件都不用跟踪!请你写好忽略文件,然后请你回退代码 , 然后再重新修改! 查找错误!根据我给你的示例编写合适的motor和IMU以及修复错误!",
+          "pastedContents": {}
+        },
+        {
+          "display": "现在编译成功下栽进去报错了:Fault exception viewer\nHardFault exception.\nThe processor has escalated a configurable-priority exception to HardFault.A precise data access error has occurred (CFSR.PRECISERR, BFAR)At data address 0x14005010.\nException occurred atPC=0x1008568e,LR=0x1008567dSee the call stack for more information. 我怀疑是你的IMU校准参数的保存出现了严重的问题,请你严格检查",
+          "pastedContents": {}
+        },
+        {
+          "display": "    Error[Li005]: no definition for \"IMU_Ini[referenced from D:\\CYT2BL3_MyWorkSpace\\project\\iar\\Debug_m4\\Obj\\user_8514941877209965082.dir\\main_cm4.o]        Error[Li005]: no definition for \"IMU_Rea[referenced from D:\\CYT2BL3_MyWorkSpace\\project\\iar\\Debug_m4\\Obj\\user_8514941877209965082.dir\\cm4_isr.o]        Error[Li005]: no definition for \"IMU_Shoas\" [referenced from D:\\CYT2BL3_MyWorkSpace\\project\\iar\\Debug_m4\\Obj\\menu_17417737970845612311.dir\\menu_config.o]        Error[Li005]: no definition for \"IMU_Calreferenced from D:\\CYT2BL3_MyWorkSpace\\project\\iar\\Debug_m4\\Obj\\menu_17417737970845612311.dir\\menu_config.o]    修复一下啊        \n\" [        \nwBi        \nd\"         \nt\" ",
+          "pastedContents": {}
+        },
+        {
+          "display": "    Error[Pe020]: identifier \"PWM14_CH1_P18_is undefined    D:\\CYT2BL3_MyWorkSpace\\project\\codotor\\Motor.c    5    Error[Pe020]: identifier \"PWM0_CH1_P00_3s undefined    D:\\CYT2BL3_MyWorkSpace\\project\\codetor\\Motor.c    5    Error[Pe020]: identifier \"PWM14_CH1_P18_is undefined    D:\\CYT2BL3_MyWorkSpace\\project\\codotor\\Motor.c    8    Error[Pe020]: identifier \"PWM0_CH1_P00_3s undefined    D:\\CYT2BL3_MyWorkSpace\\project\\code\\Motor\\Motor.c   修复一下啊 102    \n\" i8    \ne\\M7\" 9    \n\\Mo\" i5    \ne\\M7\" ",
+          "pastedContents": {}
+        },
+        {
+          "display": "可以用了 貌似是和STM32某个插件冲突了,后面设置更改了intelli Sense Engine",
+          "pastedContents": {}
+        },
+        {
+          "display": "还是没有效果,就是无法跳转, C/C++这些插件都安装了",
+          "pastedContents": {}
+        },
+        {
+          "display": "为什么我的vscode跳转也没有 , 就是很不聪明的样子",
+          "pastedContents": {}
+        },
+        {
+          "display": "写一个电机驱动代码 , 在code文件夹下面新建一个文件夹命名为Motor,里面两个文件 , 一个Motor.c一个.h,我是用CYT2BL3,有刷电机驱动为DRV8701,左电机的PWM为18.7,左电机的Dir为18.6,右电机的PWM为0.3,右电机的Dir为0.2,然后控制频率你自己定一个比较适合高性能有刷直流电机的频率.对于IMU部分不需要写这么的print,我以后禁用你来写print除非我让你专门写调试的printf,可以理解吗?所以删去IMU部分的printf.另外需要注意的是你要在主菜单里面加一个子菜单\"Debug\",在这个菜单里面,有两个子函数项,一个是Test_Motor_Left(具体实现在Motor.c里面,在menu_config.c是个弱层的) , 在这个函数里面实现进入函数之后,调节PWM的占空比,也就是调节电机的速度,默认初始是0,按下第一个按键是加速,按下第二个按键是减速,如果按下的速度是负数那就是方向相反,按下第三个按键是确定,也就是这个速度不是实时调节的,是按下第一个第二个仅改变参数,按下第三个才调用调速的函数,防止误操作导致电机转速太快,Test_Motor_Right功能同理.按下第四个按键退出这两个功能函数.",
+          "pastedContents": {}
+        },
+        {
+          "display": "请你帮我修复,然后直接提交",
+          "pastedContents": {}
+        },
+        {
+          "display": "将当前的更改检查一下 , 是否哪里有问题 , 并与上次的git提交进行对比,写出哪里变化了,commit信息写完整,然后推送",
+          "pastedContents": {}
+        },
+        {
+          "display": "继续修复",
+          "pastedContents": {}
+        },
+        {
+          "display": "你需要知道的是哪怕在不同存档里面,IMU这些零票的参数都不用变的,所以最好这个都分开来,就是IMU校准的这些参数,最好都是保存的时候只保存IMU的这些参数到四个存档位,然后其他类似于不同的kp , 目标速度什么的这些参数都是不用因为IMU的校准而保存,也就是说IMU这个参数是不会因为存档分开保存,而是通用的参数!",
+          "pastedContents": {}
+        },
+        {
+          "display": "IMU_Cal()我希望这个函数后面可以自动存到flash,使用菜单系统存到flash,而不是用户手动保存,而是自动保存",
+          "pastedContents": {}
+        },
+        {
+          "display": "你可能理解错误的我意思了,你需要注意的是1.IMU的几个参数是结合菜单系统的,而不是脱离菜单系统直接操控flash,而是利用菜单系统,当作普通的参数来处理,也不需要特殊的什么魔术,另外2.cm4_isr.c你在编辑的时候,生成了很多乱码,我需要你恢复,我的编辑器是UTF-8编码,请你纠正",
+          "pastedContents": {}
+        },
+        {
+          "display": "是的 我想要的中断最好是1ms,然后内部有个count 中断在cm3_isr.c",
+          "pastedContents": {}
+        },
+        {
+          "display": "你可以看到我的IMU文件夹下面又opensource文件夹 ,这个式开源的姿态解算,只是放在这里的,不参与项目的具体的实现,我希望你可以在IMU这个文件夹下面实现两个文件 IMU.C,IMU.h ,我用的是逐飞科技的IMU660RA , 我希望你可以实现IMU_Init这个功能,可以实现零飘的校准,然后保存在flash里面,结合菜单的变量,然后同时使用菜单内的参数保存功能,主菜单里面有个子菜单叫IMU,里面显示校准零漂的几个参数,然后给出一个函数项,IMU_Cal , 实现零票校准,静止情况下采集角速度数据,然后求平均,3MS读取一次IMU数据,其他都不用改",
+          "pastedContents": {}
+        },
+        {
+          "display": "你看现在我的智能智能车工程是围绕菜单系统构建的,你可以在我的menu_conifg.c里面很多函数项都是直接在这个饿文件里面实现的,那么但是这样就相当于很多功能性的函数都是在menu_config.c里面的,那么比如说一些motor的驱动,IMU的计算实现校准,,image的实现,这样多文件怎么管理起来不会乱,合理清晰,教教我",
+          "pastedContents": {}
+        },
+        {
+          "display": "[02:33:15.172] ========== 测试报告 ==========\n[02:33:15.172] 总测试次数:\n[02:33:15.183]  111\n[02:33:15.183] 成功次数: 109\n[02:33:15.183] 失败次数: 2\n[02:33:15.183] 成功率: 98.2%\n[02:33:15.183] \n[02:33:15.183] ⚠ SD卡基本正常，但有少量错误\n[02:33:15.183] ========== 测[?:e8]\n[02:33:15.189] 绯�结束 ==========\n[02:33:15.189] ========== 测试结束 ==========[02:33:20.712] ========== 测试报告 ==========\n[02:33:20.712] 总测试次数:\n[02:33:20.722]  111\n[02:33:20.722] 成功次数: 108\n[02:33:20.722] 失败次数: 3\n[02:33:20.722] 成功率: 97.3%\n[02:33:20.722] \n[02:33:20.722] ⚠ SD卡基本正常，但有少量错误\n[02:33:20.722] ========== 测[?:e8]\n[02:33:20.728] 绯�结束 ==========\n[02:33:20.728] ========== 测试结束 ==========为什么呢 每次测试出来的数据不一样 ",
+          "pastedContents": {}
+        },
+        {
+          "display": "你确定吗 请你对此写更详细的测试函数 , 模拟写入 模拟读取 , 多次模拟!确保正确!",
+          "pastedContents": {}
+        },
+        {
+          "display": "[02:27:14.038] ========== SD卡SPI通信测试 ==========\n[02:27:14.038] SD卡测试开始\n[02:27:14.038] SD卡初始化开始...\n[02:27:14.140] 发送初始化时钟...\n[02:27:14.167] 发送CMD0...\n[02:27:14.167] CMD0成功，尝试次数: 0，响应: 0x01\n[02:27:14.167] 获取卡类型...\n[02:27:14.167] CMD8响应: 0x01\n[02:27:14.167] CMD8响应数据: 0x01\n[02:27:14.171] , 0xAA\n[02:27:14.171] 检测到SD V2.0卡，发送ACMD41...\n[02:27:14.272] ACMD41尝试次数: 9，响应: 0x00\n[02:27:14.272] OCR: 0xC0\n[02:27:14.272] 设置块大小响应: 0x00\n[02:27:14.272] 卡类型: 0x04\n[02:27:14.272] SD卡初始化成功\n[02:27:14.383] 卡类型: SDHC\n[02:27:14.383] 容量: 29580 MB\n[02:27:14.383] 块数: 60579840\n[02:27:14.383] 块大小: 512 字节\n[02:27:14.383] 写入块0测试...\n[02:27:14.404] 写入成功\n[02:27:14.404] 读取块0测试...\n[02:27:14.415] 读取成功\n[02:27:14.415] 验证数据...\n[02:27:14.415] 数据验证成功\n[02:27:14.415] SD卡测试完成\n[02:27:14.415] ========== 测试结束 ==========你看看这个什么意思呢?",
+          "pastedContents": {}
+        },
+        {
+          "display": "[02:24:26.310] ========== SD卡SPI通信测试 ==========\n[02:24:26.310] SD卡测试开始\n[02:24:26.310] SD卡初始化开始...\n[02:24:26.411] 发送初始化时钟...\n[02:24:26.443] 发送CMD0...\n[02:24:26.443] CMD0成功，尝试次数: 0，响应: 0x01\n[02:24:26.443] 获取卡类型...\n[02:24:26.443] 获取卡类型失败\n[02:24:26.443] SD卡初始化失败\n[02:24:26.443] ========== 测试结束 ========== 这个是返回的结果",
+          "pastedContents": {}
+        },
+        {
+          "display": "[02:19:59.054] ========== SD卡SPI通信测试 ==========\n[02:19:59.054] SD卡测试开始\n[02:19:59.086] SD卡初始化失败\n[02:19:59.086] ========== 测试结束 ========== 为什么!请你进行检查!",
+          "pastedContents": {}
+        },
+        {
+          "display": "在iar里面 为什么报错说:     Fatal Error[Pe1696]: cannot open source e \"sd_card_spi.h\"    D:\\CYT2BL3_MyWorkSpace\\projecser\\main_cm4.c    6    \nt\\ufil",
+          "pastedContents": {}
+        },
+        {
+          "display": "可以就这样开始编写!严格!简洁!高效!学习别人的代码!",
+          "pastedContents": {}
+        },
+        {
+          "display": "sdcard_stm32_forstudy这个文件夹下面有几个文件 , 是野火提供的STM32使用SPI与SD卡进行通信的示例代码 , 我要求你使用逐飞库 , 使用CYT2BL3这款主控和SD卡进行通信 , 使用硬件SPI , 引脚在SD卡下面的MD文档当中 , 注意不允许破坏任何的库文件 , 也就是不允许修改任何其他杂七杂八的库代码 , 只允许在SD这个文件夹下面进行编写 , 同时只允许在同一个文件下面编写测试函数 , 并且允许在main文件里面进行适度的合理的测试 , 使用串口进行收发消息 , 但是你需要注意是串口发消息 不需要很多 , 只需要最简单的\"XXX可以 , XXX不行\" 然后好好思考 主要参考野火提供的STM32的spi与SD卡进行通信的代码",
+          "pastedContents": {}
+        },
+        {
+          "display": "/clear ",
+          "pastedContents": {}
+        },
+        {
+          "display": "    Error[Pe101]: \"SD_OK\" has already been dared in the current scope (\u0001Hat line 58 of \"D:\\CYT2BL3_MyWorkSpace\\project\\iar\\project_config\\..\\..\\code\\SD\\sd_card_port.h\"\u0001h)    D:\\CYT2BL3_MyWorkSpaproject\\code\\SD\\sd_card_spi.h    9     Error[Pe101]: \"SD_ERROR_TIMEOUT\" has alry been declared in the current scope (\u0001Hat line 63 of \"D:\\CYT2BL3_MyWorkSpace\\project\\iar\\project_config\\..\\..\\code\\SD\\sd_card_port.h\"\u0001h)    D:\\CYT2BLyWorkSpace\\project\\code\\SD\\sd_card_spi.h    9 还有多条err进行修复4    \n3_Mead2    \nce\\ecl",
+          "pastedContents": {}
+        },
+        {
+          "display": "所以sd_card_spi.c/.h这两个文件是不要了吗",
+          "pastedContents": {}
+        },
+        {
+          "display": "sdcard_stm32_forstudy这个文件夹下面是我从网上找到的STM32通过SPI与SD卡通信的库文件 之前一直都有问题 , 请你依照这个库函数文件 , 然后移植到我的项目当中 , 然后做好调试检查的工作 , 注意串口发送的内容越简单越好 , 不用很复杂 , 然后好好移植人家开源的SPI和SD卡的库文件 找出问题在哪里",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/help ",
+          "pastedContents": {}
+        },
+        {
+          "display": "[01:21:50.141] === SPI基础测试 ===\n[01:21:50.141] CS高电平测试: FF FF FF FF FF \n[01:21:50.141] CS低电平测试: FF FF FF 82 FF \n[01:21:50.649] \n[01:21:50.649] === CMD0专项测试(修正版) ===\n[01:21:50.649] \n[01:21:50.649] 速度100000Hz:\n[01:21:50.911]   尝试1: 01 <-成功!\n[01:21:50.966]   尝试2: 01 <-成功!\n[01:21:51.019]   尝试3: 01 <-成功!\n[01:21:51.071] 速度200000Hz:\n[01:21:51.332]   尝试1: 01 <-成功!\n[01:21:51.385]   尝试2: 01 <-成功!\n[01:21:51.438]   尝试3: 01 <-成功!\n[01:21:51.489] 速度400000Hz:\n[01:21:51.745]   尝试1: 01 <-成功!\n[01:21:51.798]   尝试2: 01 <-成功!\n[01:21:51.851]   尝试3: 01 <-成功!\n[01:21:52.404] \n[01:21:52.404] === SD核心调试(修正版) ===\n[01:21:52.529] CMD0: 01 OK\n[01:21:52.547] CMD8: 0x00\n[01:21:52.547] \n[01:21:52.547] 方法1-ACMD41:\n[01:21:52.547]   CMD55失败: 0xFF\n[01:21:52.547] \n[01:21:52.547] 方法2-CMD1:\n[01:21:52.547]   [0]0x01 \n[01:21:52.567]   成功@1\n[01:21:53.071] \n[01:21:53.071] ===== 标准初始化测试 =====\n[01:21:53.110] 初始化失败: Initialization failed\n[01:21:53.110] \n[01:21:53.110] ========== 调试完成 ========== 这个是第一张卡 , 以下是第二章卡的 : [01:23:28.807] === CMD0专项测试(修正版) ===\n[01:23:28.807] \n[01:23:28.807] 速度100000Hz:\n[01:23:29.073]   尝试1: 01 <-成功!\n[01:23:29.127]   尝试2: 01 <-成功!\n[01:23:29.180]   尝试3: 01 <-成功!\n[01:23:29.233] 速度200000Hz:\n[01:23:29.492]   尝试1: 01 <-成功!\n[01:23:29.545]   尝试2: 01 <-成功!\n[01:23:29.598]   尝试3: 01 <-成功!\n[01:23:29.651] 速度400000Hz:\n[01:23:29.905]   尝试1: 01 <-成功!\n[01:23:29.958]   尝试2: 01 <-成功!\n[01:23:30.011]   尝试3: 01 <-成功!\n[01:23:30.565] \n[01:23:30.565] === SD核心调试(修正版) ===\n[01:23:30.688] CMD0: 01 OK\n[01:23:30.706] CMD8: 0x00\n[01:23:30.706] \n[01:23:30.706] 方法1-ACMD41:\n[01:23:30.706]   CMD55失败: 0xC1\n[01:23:30.706] \n[01:23:30.706] 方法2-CMD1:\n[01:23:30.706]   [0]0x01 \n[01:23:30.911]   [10]0x01 \n[01:23:31.114]   [20]0x01 \n[01:23:31.317]   [30]0x01 \n[01:23:31.520]   [40]0x01 \n[01:23:31.725] \n[01:23:31.725] 两种方法都失败\n[01:23:32.228] \n[01:23:32.228] ===== 标准初始化测试 =====\n[01:23:32.267] 初始化失败: Initialization failed\n[01:23:32.267] \n[01:23:32.267] ========== 调试完成 ==========请你再次进行检查到底是为什么还没有初始化成功呢",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "第二张卡:[01:14:57.663] === CMD0专项测试 ===\n[01:14:57.663] \n[01:14:57.663] 速度100000Hz:\n[01:14:57.929]   尝试1: FF FF 7F \n[01:14:57.983]   尝试2: FF FF 7F \n[01:14:58.038]   尝试3: FF FF 7F \n[01:14:58.089] 速度200000Hz:\n[01:14:58.349]   尝试1: FF FF 7F \n[01:14:58.402]   尝试2: FF FF 7F \n[01:14:58.455]   尝试3: FF FF 7F \n[01:14:58.507] 速度400000Hz:\n[01:14:58.763]   尝试1: FF FF 7F \n[01:14:58.815]   尝试2: FF FF 7F \n[01:14:58.867]   尝试3: FF FF 7F \n[01:14:59.420] \n[01:14:59.420] === SD核心调试 ===\n[01:14:59.544] CMD0: 7F \n[01:14:59.555] 7F \n[01:14:59.566] 7F \n[01:14:59.577] 7F \n[01:14:59.588] 7F \n[01:14:59.599] 7F \n[01:14:59.609] 7F \n[01:14:59.620] 7F \n[01:14:59.631] 7F \n[01:14:59.641] 7F \n[01:14:59.655] 失败\n[01:14:59.655] 尝试100KHz: 0x05\n[01:15:00.159] \n[01:15:00.159] ===== 标准初始化测试 =====\n[01:15:00.197] 初始化失败: Initialization failed\n[01:15:00.197] \n[01:15:00.197] ========== 调试完成 ========== , 第一张卡:[01:15:58.216] === CMD0专项测试 ===\n[01:15:58.216] \n[01:15:58.216] 速度100000Hz:\n[01:15:58.491]   尝试1: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:15:58.553]   尝试2: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:15:58.616]   尝试3: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:15:58.668] 速度200000Hz:\n[01:15:58.933]   尝试1: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:15:58.993]   尝试2: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:15:59.051]   尝试3: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:15:59.104] 速度400000Hz:\n[01:15:59.365]   尝试1: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:15:59.423]   尝试2: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:15:59.481]   尝试3: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF \n[01:16:00.034] \n[01:16:00.034] === SD核心调试 ===\n[01:16:00.159] CMD0: FF \n[01:16:00.170] FF \n[01:16:00.183] FF \n[01:16:00.194] FF \n[01:16:00.206] FF \n[01:16:00.218] FF \n[01:16:00.230] FF \n[01:16:00.242] FF \n[01:16:00.254] FF \n[01:16:00.266] FF \n[01:16:00.277] 失败\n[01:16:00.277] 尝试100KHz: \n[01:16:00.285] 0x0B\n[01:16:00.788] \n[01:16:00.788] ===== 标准初始化测试 =====\n[01:16:00.911] 初始化失败: Initialization failed\n[01:16:00.911] \n[01:16:00.911] ========== 调试完成 ==========为甚么请你进行纠正\n\n\n",
+          "pastedContents": {}
+        },
+        {
+          "display": "[01:03:04.174] ========== SD Card Diagnostic ==========\n[01:03:04.225] Sending init clocks...\n[01:03:04.244] Testing CMD0 (GO_IDLE):\n[01:03:04.244]   Try 1: 0xFF 0x01 \n[01:03:04.263]   SUCCESS: Card in IDLE state\n[01:03:04.263] \n[01:03:04.263] Testing CMD8 (SEND_IF_COND):\n[01:03:04.263]   Response: 0xFF 0x01 \n[01:03:04.263]   Card supports V2.0 protocol[01:03:04.914] 4. Test Results:\n[01:03:04.914]    SUCCESS: SD card responded with IDLE state (0x01)\n[01:03:04.914]    Hardware connection is GOOD!\n[01:03:04.914] \n[01:03:04.914] ========== Hardware Test Complete ==========\n[01:03:05.917] \n[01:03:05.917] ===== Quick SD Card Test =====\n[01:03:05.956] SD card init failed! (Error: Initialization failed)\n[01:03:05.956] ============================== 这个是第一张卡的 接下来是第二张卡的: [01:05:13.247] ========== SD Card Diagnostic ==========\n[01:05:13.299] Sending init clocks...\n[01:05:13.316] Testing CMD0 (GO_IDLE):\n[01:05:13.316]   Try 1: 0x3F \n[01:05:13.328]   Try 2: 0xFF 0xC0 \n[01:05:13.341]   Try 3: 0xFF 0xC0 \n[01:05:13.354]   Try 4: 0xFF 0xC0 \n[01:05:13.366]   Try 5: 0xFF 0xC0 [01:05:14.008] 3. Testing CS control and basic CMD0...\n[01:05:14.008]    CS pulled low\n[01:05:14.008]    CMD0 sent\n[01:05:14.008]    Reading response: 0xFF 0xC0 \n[01:05:14.008]    CS pulled\n[01:05:14.019]  high\n[01:05:14.019] \n[01:05:14.019] 4. Test Results:\n[01:05:14.019]    WARNING: Unexpected response: 0xC0\n[01:05:14.019]    SD card might be present but not properly initializ\n[01:05:14.024] ed[01:05:14.024] ========== Hardware Test Complete ==========\n[01:05:15.027] \n[01:05:15.027] ===== Quick SD Card Test =====\n[01:05:15.151] SD card init failed! (Error: Initialization failed)\n[01:05:15.151] ============================== 为什么 进行从最底层的研究到最上层的研究 到底是哪里出了问题 逐步排查 只给出最核心的串口消息 没用的不要发! 就是简介的发送就可以了",
+          "pastedContents": {}
+        },
+        {
+          "display": "第二章卡返回的消息:[00:54:28.805] ========== SD Card Hardware Test ==========\n[00:54:28.805] 1. Initializing GPIO and SPI...\n[00:54:28.805]    CS pin (P18.4) initialized\n[00:54:28.805]    SPI2 i\n[00:54:28.814] nitialized at 100KHz\n[00:54:28.814] \n[00:54:28.814] 2. Testing SPI communication...\n[00:54:28.814]    Sent 10 bytes of 0xFF\n[00:54:28.924] \n[00:54:28.924] 3. Testing CS control and basic CMD0...\n[00:54:28.924]    CS pulled low\n[00:54:28.924]    CMD0 sent\n[00:54:28.924]    Reading response: 0xFF 0xC0 \n[00:54:28.924]    CS pulled\n[00:54:28.934]  high\n[00:54:28.934] \n[00:54:28.934] 4. Test Results:\n[00:54:28.934]    WARNING: Unexpected response: 0xC0\n[00:54:28.934]    SD card might be present but not properly initializ\n[00:54:28.940] ed\n[00:54:28.940] \n[00:54:28.940] ========== Hardware Test Complete ==========\n[00:54:29.943] \n[00:54:29.943] ===== Quick SD Card Test =====\n[00:54:32.182] SD card init failed! (Error: Initialization failed)\n[00:54:32.182] ============================== 第一张卡返回的消息: [00:55:20.598] 4. Test Results:\n[00:55:20.598]    SUCCESS: SD card responded with IDLE state (0x01)\n[00:55:20.598]    Hardware connection is GOOD!\n[00:55:20.598] \n[00:55:20.598] ====\n[00:55:20.603] ====== Hardware Test Complete ==========\n[00:55:21.606] \n[00:55:21.606] ===== Quick SD Card Test =====\n[00:55:21.831] SD card init success!\n[00:55:21.831] Card Type: SDHC\n[00:55:21.831] Capacity: 2072480 MB\n[00:55:21.831] Blocks: 4244439040\n[00:55:21.831] \n[00:55:21.831] Writing block 100... FAILED (Error: \n[00:55:21.843] Invalid response)\n[00:55:21.843] \n[00:55:21.843] --- Performance Test ---\n[00:55:21.843] Write failed at block 200\n[00:55:21.843] ============================== 给你一些参考资料: 上面Micro SD卡的硬件电路就好了，下面我们讲讲Micro SD卡的软件驱动和指令集。\n\nSD卡的命令格式如下，6字节共48位，传输时最高位(MSB)先传输： SD卡的command（命令）占6 bit，一般叫CMDx或ACMDx，比如CMD1就是1，CMD13就是13，ACMD41就是41，依此类推。Command Argument（命令参数）占4 byte，并不是所有命令都有参数，没有参数的话该位一般就用置0。\n\n最后一个字节由7 bit CRC校验位和1 bit停止位组成。在SPI模式下，CRC是被忽略的，可以都置1或置0.但是发送CMD0时要记得加上CRC，即最后1字节为0x95（因为发送 CMD0时还未进入SPI模式，PS：CMD8也要，\n\n但一般大家都把发送CMD8省略了）。每次发送完一次命令后，SD卡都会有回应。SD卡的回应有多种格式，1字节的R1，2字节的R2等，不过一般在SPI模式中我们只用到R1，下面介绍R1的格式： 关于SD卡SPI和command的发送要注意以下几点：\n\n1.SD卡的SPI总线，在读入数据时SD卡的SPI是CLK的上升沿输入锁存，输出数据也是在上升沿。\n\n2.向SD卡写入一个CMD或者ACMD指令的过程是这样的： 首先使CS为低电平，SD卡使能；其次在SD卡的Din写入指令；写入指令后还要附加8个填充时钟，是SD卡完成内部操作；之后在SD卡的Dout上接受回应；回应接受完毕使CS为低电平，再附加8个填充时钟。\n\n3.在SD卡的Din没有数据写入时，应使Din\n保持高电平。关于这一点我可吃透了苦头，本来也记得要保持高电平的，结果不知怎的鬼使神差的置0拉低了。结果程序出现了各种奇怪的貌似偶然的错误，比如连\n续两次复位会有一次失败，单步调试成功全速运行又会失败。总之在这个过程中我对时序进行各种改变，每次解决一个问题后又会有新的问题出现，多少次动摇了我\n对MicroSD卡和SD卡的操作是一样的这个看法。因为这个低级的错误耽误了我三四天，看来细心很重要啊！我已经不止一次因为不细心浪费大量时间了，希\n望大家也引以为戒。\n\n好了，现在SD卡的命令和回应清楚了，我们下面讲讲SD卡的复位，初始化和读写方法。\n\n \n\n复位方法：\n\n1.拉高CS，发送至少74个clk周期来使SD卡达到正常工作电压和进行同步\n\n2.选低CS，发送CMD0，需要收到回应0x01表示成功进入idle状态\n\n3.拉高CS，发送8个时钟\n\n复位时序图： 初始化：\n\n    复位成功后，SD卡就进入了SPI模式，接着应该进行初始化。初始化说白了有两种方法：（1）发送CMD1，（2）发送CMD55+ACMD41。\n\n我从网 上查的资料可以看到这种说法：如果是MMC卡就发CMD1，SD卡则发CMD55+ACMD41。但是关于Micro SD卡要发哪种却讲的不太清楚，网上用这两种方法都有人成功过，但有的都o SD卡（当然也可能是杂牌的，室友买那卡的地方一般都是卖各种廉价电子产品的，大家都知道是杂牌的），结果一试就成功了。后来我用了令一种方法发现也可以 初始化，\n\n也就是说两种方法都可以初始化成功。但我的那种怎么就不行呢？难道不是所有Micro SD卡都支持SPI模式。我在网上百度了半天也不能确定是不是所有Micro SD卡都支持SPI模式。\n\n但我想，现在Micro SD卡的生产公司很多，而且你也并不能保证你的Micro SD卡不是杂牌的。你并不知道生产厂家进行了那些改变，因为确实有些厂家生产的SD卡精简了一些命令。所以初始化的时候建议两种都试一下，\n\n不过我记得SD 卡的说明书上推荐使用第二种方法。\n\n \n\n下面是初始化方法：\n\n（1）使用CMD1\n\n发送CMD1，收到0x00表示成功\n\n时序图如下： 读多块方法：\n\n    1.发送CMD18读，收到0x00表示成功\n\n    2.连续读直到读到开始字节0xFE\n钟\n\n    3.发送写单块开始字节0xFE\n\n    4.发送512个字节数据\n\n    5.发送2字节CRC（可以均为0xff）\n\n    6.连续读直到读到XXX00101表示数据写入成功\n\n    7.继续读进行忙检测（读到0x00表示SD卡正忙），当读到0xff表示写操作完成\n\n    写单块时序图： 写多块方法：\n\n    1.发送CMD25，收到0x00表示成功\n\n    2.发送若干时钟\n\n    3.发送写多块开始字节0xFC\n\n    4.发送512字节数据\n\n    5.发送两个CRC（可以均为0xff）\n\n    6.连续读直到读到XXX00101表示数据写入成功\n\n    7.继续读进行忙检测，直到读到0xFF表示写操作完成\n\n    8.如果想读下一扇区重复2-7步骤\n\n    9.发送写多块停止字节0xFD来停止写操作\n\n    10.进行忙检测直到读到0xFF",
+          "pastedContents": {}
+        },
+        {
+          "display": "[00:48:08.211]    Hardware connection is GOOD!\n[00:48:08.211] \n[00:48:08.211] ========== Hardware Test Complete ==========\n[00:48:09.214] \n[00:48:09.214] ===== Quick SD Card Test =====\n[00:48:09.444] SD card init success!\n[00:48:09.444] Card Type: SDHC\n[00:48:09.444] Capacity: 2122219520 MB\n[00:48:09.444] Blocks: 4244439040\n[00:48:09.444] \n[00:48:09.444] Writing block 100... FAILED (Erro\n[00:48:09.454] r: Invalid response)\n[00:48:09.454] \n[00:48:09.454] --- Performance Test ---\n[00:48:09.454] Write failed at block 200\n[00:48:09.454] ============================== Why 修复! 然后我换了一块SD卡 然后重新执行相同的代码 返回:[00:49:24.207] ========== SD Card Hardware Test ==========\n[00:49:24.207] 1. Initializing GPIO and SPI...\n[00:49:24.207]    CS pin (P18.4) initialized\n[00:49:24.207]    SPI2 i\n[00:49:24.216] nitialized at 100KHz\n[00:49:24.216] \n[00:49:24.216] 2. Testing SPI communication...\n[00:49:24.216]    Sent 10 bytes of 0xFF\n[00:49:24.327] \n[00:49:24.327] 3. Testing CS control and basic CMD0...\n[00:49:24.327]    CS pulled low\n[00:49:24.327]    CMD0 sent\n[00:49:24.327]    Reading response: 0x3F \n[00:49:24.327]    CS pulled high\n[00:49:24.337] \n[00:49:24.337] \n[00:49:24.337] 4. Test Results:\n[00:49:24.337]    WARNING: Unexpected response: 0x3F\n[00:49:24.337]    SD card might be present but not properly initialized\n[00:49:24.337] \n[00:49:24.342] ========== Hardware Test Complete ==========\n[00:49:25.345] \n[00:49:25.345] ===== Quick SD Card Test =====\n[00:49:25.725] SD card init failed! (Error: Initialization failed)\n[00:49:25.725] ============================== 为什么嗯",
+          "pastedContents": {}
+        },
+        {
+          "display": " ==============================\n[00:40:20.532] \n[00:40:20.532] 3. Preparing test data...\n[00:40:20.532]    Test pattern prepared (0x00-0xFF)\n[00:40:20.532] \n[00:40:20.532] 4. Writing single b\n[00:40:20.536] lock (block 1000)...\n[00:40:20.536]    FAILED: Invalid response\n[00:40:20.653] \n[00:40:20.653] ========== Multi-Block Test ==========\n[00:40:20.653] 1. Preparing 5 blocks of test data...\n[00:40:20.653]    Data prepared\n[00:40:20.653] \n[00:40:20.653] 2. Writing 5 blocks starting at block 2000...\n[00:40:20.653]    FAILED: Invalid response\n[00:40:20.763] \n[00:40:20.763] ========== Performance Test ==========\n[00:40:20.763] 1. Single block write test (100 blocks)...\n[00:40:20.763]    Write failed at block 5000\n你看这个串口的消息 都说FAILED",
+          "pastedContents": {}
+        },
+        {
+          "display": "========== SD Card Power Check ==========\n[00:30:27.971] Please verify:\n[00:30:27.971] 1. SD card VDD connected to 3.3V\n[00:30:27.971] 2. SD card GND connected \n[00:30:27.981] to GND\n[00:30:27.981] 3. Add 100uF capacitor near SD card power pins\n[00:30:27.981] 4. Measure voltage at SD card: should be 3.0-3.3V\n[00:30:27.981] \n[00:30:27.981] Pin connect\n[00:30:27.991] ions:\n[00:30:27.991]   SD Pin 1 (CS)   -> P18.4\n[00:30:27.991]   SD Pin 2 (MOSI) -> P7.1\n[00:30:27.991]   SD Pin 3 (GND)  -> GND\n[00:30:27.991]   SD Pin 4 (VDD)  -> 3.3V\n[00:30:27.991]   SD \n[00:30:28.003] Pin 5 (SCK)  -> P7.2\n[00:30:28.003]   SD Pin 6 (GND)  -> GND\n[00:30:28.003]   SD Pin 7 (MISO) -> P7.0\n[00:30:28.003] ==========================================\n[00:30:28.512] \n[00:30:28.512] ========== SD Card Hardware Test ==========\n[00:30:28.512] 1. Initializing GPIO and SPI...\n[00:30:28.512]    CS pin (P18.4) initialized\n[00:30:28.512]    SPI2 i\n[00:30:28.521] nitialized at 100KHz\n[00:30:28.521] \n[00:30:28.521] 2. Testing SPI communication...\n[00:30:28.521]    Sent 10 bytes of 0xFF\n[00:30:28.632] \n[00:30:28.632] 3. Testing CS control and basic CMD0...\n[00:30:28.632]    CS pulled low\n[00:30:28.632]    CMD0 sent\n[00:30:28.632]    Reading response: 0xFF 0x01 \n[00:30:28.632]    CS pulled\n[00:30:28.642]  high\n[00:30:28.642] \n[00:30:28.642] 4. Test Results:\n[00:30:28.642]    SUCCESS: SD card responded with IDLE state (0x01)\n[00:30:28.642]    Hardware connection is GOOD!\n[00:30:28.642] \n[00:30:28.642] ====\n[00:30:28.647] ====== Hardware Test Complete ==========\n[00:30:29.656] \n[00:30:29.656] ==================================================\n[00:30:29.656]        SD Card SPI Driver Test Program\n[00:30:29.656] ==========================\n[00:30:29.667] ========================\n[00:30:29.667] Hardware Configuration:\n[00:30:29.667]   SCK  - P7.2\n[00:30:29.667]   MOSI - P7.1\n[00:30:29.667]   MISO - P7.0\n[00:30:29.667]   CS   - P18.4\n[00:30:29.667] ========\n[00:30:29.677] ==========================================\n[00:30:29.677] \n[00:30:29.677] ========== SD Card Basic Test ==========\n[00:30:29.677] 1. Initializing SD card...\n[00:30:29.677] [SD]\n[00:30:29.687]  Starting SD card initialization...\n[00:30:29.687] [SD] CS pin initialized (P18.4)\n[00:30:29.687] [SD] SPI initialized at 400000 Hz\n[00:30:29.792] [SD] Sent initialization clocks\n[00:30:29.802] [SD] CMD0 success, card in idle state\n[00:30:30.009]    SUCCESS!\n[00:30:30.009] \n[00:30:30.009] 2. SD Card Information:\n[00:30:30.009] ===== SD Card Information =====\n[00:30:30.009] Card Type: SDHC\n[00:30:30.009] Capacity: 2072480 MB\n[00:30:30.009] Block Si\n[00:30:30.019] ze: 512 bytes\n[00:30:30.019] Block Count: 4244439040\n[00:30:30.019] Manufacturer ID: 0x0[00:30:30.019] OEM ID: 这个是串口返回的信息 , 检查现在spi通信到什么进展 , 然后为了让通信速度更快 , 请你优化掉一些没用的东西 , 然后注意 在初始化阶段稳妥一点浪费时间是没关系的 但是在后续通信的时候要注意通信速度要快,同时注意通信的好, 然后有问题的地方进行修改! FAILED的地方找bug 不要增加其他杂七杂八的文件 , 现在允许你在main文件里面做一些临时的修改 也不要破坏其他封装良好的函数",
+          "pastedContents": {}
+        },
+        {
+          "display": "[00:09:22.599] ==================================================\n[00:09:22.599]        SD Card SPI Driver Test Program\n[00:09:22.599] ==========================\n[00:09:22.609] ========================\n[00:09:22.609] Hardware Configuration:\n[00:09:22.609]   SCK  - P7.2\n[00:09:22.609]   MOSI - P7.1\n[00:09:22.609]   MISO - P7.0\n[00:09:22.609]   CS   - P18.4\n[00:09:22.609] ========\n[00:09:22.620] ==========================================\n[00:09:22.620] \n[00:09:22.620] ========== SD Card Basic Test ==========\n[00:09:22.620] 1. Initializing SD card...\n[00:09:22.742]    FAILED: Initialization failed\n[00:09:22.851] \n[00:09:22.851] ========== Multi-Block Test ==========\n[00:09:22.851] SD card not initialized! Run basic test first.\n[00:09:22.961] \n[00:09:22.961] ========== Performance Test ==========\n[00:09:22.961] SD card not initialized! Run basic test first.\n[00:09:22.961] \n[00:09:22.961] ============================\n[00:09:22.970] ======================\n[00:09:22.970]           All Tests Complete!\n[00:09:22.970] ==================================================他说错误",
+          "pastedContents": {}
+        },
+        {
+          "display": "现在已经变成了 // 锟斤拷锟斤拷锟斤拷写锟斤拷锟斤拷 这样的乱码了 我希望我所有的乱码都改为 UTF-8 然后不要使用额外的脚本进行处理 你就直接对乱码部分进行纠正就可以了!",
+          "pastedContents": {}
+        },
+        {
+          "display": "    Error[Li005]: no definition for \"system_val_ms\" [referenced from D:\\CYT2BL3_MyWorkSpace\\project\\iar\\Debug_m4\\Obj\\user_8514941877209965082.dir\\main_cm4.o]    还是错误! 请你进行纠正!        \nget",
+          "pastedContents": {}
+        },
+        {
+          "display": "    Error[Li005]: no definition for \"system_val_ms\" [referenced from D:\\CYT2BL3_MyWorkSpace\\project\\iar\\Debug_m4\\Obj\\user_8514941877209965082.dir\\main_cm4.o]     进行修复!        \nget",
+          "pastedContents": {}
+        },
+        {
+          "display": "我需要你帮我写一下SD卡的通信的代码 , 使用SPI进行通信 , SD卡是microSD的32GB的! 然后引脚对应的是 引脚依次为7.2是sck , 7.1是mosi , 7.0miso , 18.4是cs , 然后你也可以看到 可以使用硬件spi 的 SPI_2 , 然后我要求你写好SD卡的通信的驱动 然后做好方便换CS引脚的宏定义 然后SD的通信协议 你写一份用户部署的文档在SD这个文件夹下面 , 已经有的逐飞库 或者其他杂七杂八的库 已经存在的内容均不要进行修改! ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/init ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "hello",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "hasCompletedProjectOnboarding": true
+    },
+    "D:\\Downloads\\workspace": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "/",
+          "pastedContents": {}
+        },
+        {
+          "display": "代码上面有漏洞 , 就是例如他名字为\"华澜 25060905\n\",然后得出的名字是\"华澜 \"然后就是在面试里面没有完全对应起来 导致被分配到了\"仅C语言通过这一栏\" 请你立刻进行修复!同时仔细排查! 还有类似\"25061311 王亚鹏\n\"这种\" 王亚鹏\"对吧都是有问题的",
+          "pastedContents": {}
+        },
+        {
+          "display": "根目录下面有C语言最终考核 .xlsx,E列标题是\"名称\",下面的名称是同学的名字 对应的G列是他们的成绩 , 成绩格式是10换行(或者空格)XX:XX , 代表做出了10道题目 , 花费的时间是XX小时XX分钟,我们对于C语言的标准是 , 主要做出来1道题目就算通过 , 另外第I列是单独的一列,标题栏是\"面试通过名单\" , 下面的名字是通过面试的人名字,只有通过C语言的同学和通过面试的同学才可以进入下一轮 , 然后E列的名称这一栏有些同学实名是有问题的 例如\"宋谦\"这个是正确的 \"施凯文25061632\"这个人错误的写了姓名+学号,\"25060924鲍威宇\"这个人错误的写了学号+姓名 有的人没有实名\"Annsh_\n\" 然后你要把通过名单的同学全部都导出一个新的excel,然后完全正确实名的标注为最正确的,错误的加入了学号的用不是很醒目的颜色标注出来 , 其他没有实名的 , 他的名字不要去掉 , 就进行保留 , 同时 , 面试名单里面有的人但是C语言通过的人单独一个工作表列出来  , C语言通过的人但是面试名单里面没有的单独一个工作表列出来 , 同时两个都有的也就是完全通过我们考核 进入下一轮的人 也单独一个工作表拉出来 , 然后同时在这个工作表里面也就是通过的人的后面加上他们的C语言通过题目的数量 你可以理解我的意思吗 使用合适的方便的技术栈实现! ",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 3,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": []
+    },
+    "C:\\Users\\zyz\\Desktop\\gift": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "slash 如何让多个AI一起类似于 1. 第一步：让 Sonnet 4.5 分析整个项目架构，找出问题点，制定重构方案\n2. 第二步：让多个 Haiku 4.5 实例并行处理各个模块的具体重构\n3. 第三步：再让 Sonnet 4.5 做代码审查",
+          "pastedContents": {}
+        },
+        {
+          "display": "/salsh",
+          "pastedContents": {}
+        },
+        {
+          "display": "但是背景也不好看 没有所谓的星空背景",
+          "pastedContents": {}
+        },
+        {
+          "display": "但是这个烟花就不好看了! 能否好看的而且不卡顿啊! 甚至换个技术栈也可以!我的需求满足最重要!",
+          "pastedContents": {}
+        },
+        {
+          "display": "感觉比如说烟花特效运行起来有点卡顿 , 就是摁了好几下然后就会卡 , 能否更加的优美!似乎!当有烟花的时候 鼠标移动也变得很卡顿,感觉不行!继续修复!",
+          "pastedContents": {}
+        },
+        {
+          "display": "这个可否使用ios打开呢 是否可以完美适配不同的手机和电脑系统呢,同样的是否对常见的类似于标题进行方便的修改呢",
+          "pastedContents": {}
+        },
+        {
+          "display": "感觉还是过于的老土",
+          "pastedContents": {}
+        },
+        {
+          "display": "我需要给macos系统编写一个方便打开不用配环境的好看的类似于烟花效果的程序 , 可以微信发送 , 适合不用任何配环境就可以直接打开,使用合适的技术栈,先写一个md文档用于初始化,不允许过度编码 就是简单高效实现市面上很难见到的超级美丽的表白前端",
+          "pastedContents": {}
+        },
+        {
+          "display": "/",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": []
+    },
+    "F:\\AC_Code": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "那么最后的数据表格在哪里呢",
+          "pastedContents": {}
+        },
+        {
+          "display": "检查现在的数据是否正确! 根据已有的两个数据表输出",
+          "pastedContents": {}
+        },
+        {
+          "display": "我希望可以使用当前算法知道可以正常工作",
+          "pastedContents": {}
+        },
+        {
+          "display": "继续",
+          "pastedContents": {}
+        },
+        {
+          "display": "现在你这个代码史山太多了,而且一直都是超时间,请你再次进行优化!优化算法!反复迭代,测试文件测试完了记得删除,有关于测试的内容你可以交给多个模型为haiku sonent4去思考 , 你负责检查监督,分布任务,保证算法的可靠性!",
+          "pastedContents": {}
+        },
+        {
+          "display": "============================================================\n               物流运输优化系统 v1.0\n============================================================\n\n请选择操作:\n1. 生成测试数据\n2. 运行基础优化模型（贪心算法）\n3. 运行高级优化模型（遗传算法/模拟退火）\n4. 查看现有数据文件\n5. 查看运行结果\n6. 退出系统\n----------------------------------------\n请输入选择 (1-6): 3\n\n==================================================\n高级优化模型\n==================================================\n\n请选择优化算法:\n1. 遗传算法 (Genetic Algorithm)\n2. 模拟退火 (Simulated Annealing)\n请输入选择 (1/2): 2\n\n请输入数据文件路径（直接回车使用默认值）:\n节点数据文件 [默认:nodes_data.xlsx]: nodes.xlsx\n物件数据文件 [默认:packages_data.xlsx]: data.xlsx\n\n使用模拟退火算法...\n初始温度 [默认:1000]:\n冷却率 [默认:0.95]:\n\n正在加载数据...\n加载完成: 40个节点, 520个物件\n正在执行优化（可能需要较长时间）...\n\n使用模拟退火算法开始优化调度...\n迭代 100: 温度=5.92, 当前成本=444473.67, 最佳成本=443708.73\n\n最终最佳成本: 443708.73\n\n==================================================\n优化结果:\n==================================================\n总物件数: 520\n已检查物件数: 520\n检查率: 100.00%\n超时物件数: 520\n超时率: 100.00%\n平均等待运送时间: 0.00分钟\n平均等待检查时间: 5552.86分钟\n\n优化用时: 1.33 秒\n\n输入导出文件名 [默认:advanced_schedule.xlsx]:\n调度方案已导出到: advanced_schedule.xlsx\n结果已保存到: advanced_schedule.xlsx\n\n按Enter键返回主菜单... 这个超时率认真的?",
+          "pastedContents": {}
+        },
+        {
+          "display": "帮我快速修改一下代码,data.xlse里面的标题栏以及下面几行数据依次为package    collection_time    collection_nodtance    must_to_lar    system_id\nP0001    2024/1/1 11:01    S2_4    s1    TRUE    2\nP0002    2024/1P0003    2024/1/1 11:12    S2_1    s3    FALSE    2\n/1 11:07    S2_3    s1    TRUE    2\n nodes.xlsx里面是node_id    y    x    description    system_iL1    0     0     大型揽收点        large\nM1    -31817    20436    中型揽收点1    1    mediumd    node_type\n,请你根据xlsx里面的数据 , 然后修改对应的程序使其可以读取这样的文件!",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "生成一下以上程序的核心算法和外围算法,最终是要写论文用的,要求高大上,适合写论文!详细!",
+          "pastedContents": {}
+        },
+        {
+          "display": "PS F:\\AC_Code> cmd /c \"f:\\AC_Code\\run.bat\"\n'0' 不是内部或外部命令，也不是可运行的程序\n或批处理文件。\n'.org' 不是内部或外部命令，也不是可运行的程序\n或批处理文件。\n'[鎻愮ず]' 不是内部或外部命令，也不是可运行的程序\n或批处理文件。\n's.txt' 不是内部或外部命令，也不是可运行的程序\n或批处理文件。\n']' 不是内部或外部命令，也不是可运行的程序\n或批处理文件。\n'绋嬪簭' 不是内部或外部命令，也不是可运行的程序\n或批处理文件。\n'ptimization.py' 不是内部或外部命令，也不是可运行的程序\n或批处理文件。\n'el' 不是内部或外部命令，也不是可运行的程序\n或批处理文件。\n[閿欒] 绋嬪簭杩愯鍑洪敊\n请按任意键继续. . .",
+          "pastedContents": {}
+        },
+        {
+          "display": "为什么不继续生成 , 而是停止了呢 ,请你继续写!",
+          "pastedContents": {}
+        },
+        {
+          "display": "请你继续生成啊",
+          "pastedContents": {}
+        },
+        {
+          "display": "一个关于物流运输优化的模型。我现在有三级揽收点，一级为小型揽收点，二级为中型揽收点，三级为大型揽收点，其中部分揽收点从属于一个中型揽收点为一个系统，三个中型揽收点即为三个系统。其中各个揽收点都具有一个节点信息，还有一些路网节点，我将通过一张excel表格给出所有节点信息和其之间的连接情况，互相连接的节点即存在道路可以通行，且可以视为直线段，你可以依据此。小型揽收点负责收取物件并上报其属性，物件具有的属性有收取时刻，收取节点，重要程度，是否必须送往大型揽收点，这些你都可以在我提供的表格中读取到，其中重要等级分为s1，s2，s3。陆上交通工具只能按照线路行驶。所有小型揽收点的物件需要送到中型和大型揽收点进行检查。中型揽收点有两名检查人员和12个a型位置，18个b型位置，1型快递车1辆，2型快递车两辆。大型揽收点有四名检察人员和24个a型位置，36个b型位置，一架直升机，1型快递车2辆，2型快递车4辆。检察人员一次可以检查一个物件。位置使用：物件到达后需要等待检查，则根据重要等级安排位置，s1必须安排a型，s3不需要安排位置，检查完成后仍需在位置上停留观察，s1需要1小时，s2需要30分钟，s3不需要观察。1型快递车速度为42.5km/h，有16个位置，s1，s2占4个位置，s3占一个位置；2型快递车速度为72.5km/h，有6个位置，s1，s2占三个位置，s3占一个位置；直升机速度为260km/h，有24个位置s1，s2占2个位置，s3占一个位置。从物件上报后，根据物件不同的重要程度，有不同的等待检查限制时间，即从物件上报到开始接受检查的时间：s1为150分钟，s2为240分钟，s3为300分钟。在满足等待检查时间窗口限制的条件下，重要程度确定了检查优先级s1>s2>s3，即重要程度高的可以插队到重要程度低的前面先检查。s1的检查时间为60分钟，s2的检查时间为30分钟，s3的检查时间为10分钟。各个中型揽收点主要负责本系统的物件的运送和检查，根据实际情况也可以保障其他系统物件的运输和检查，大型揽收点负责到各中型揽收点拿取物件并送到大型揽收点检查，根据实际情况也可以到小型揽收点拿取物件到大型揽收点进行检查。物件信息上报时刻到物件被送上载具时刻为等待运送时间，物件被送上载具时刻到物件到达检查场地时刻为运送时间，物件到达检查场地时刻到物件开始检查时间为等待检查时间，物件开始检查时间到物件检查结束时刻为检查时间。物件信息上报时刻到物件开始检查时间为等待检查时间。我需要按以上要求构建模型，用于求出最佳载具调度方案以达到最大物件检查率，并生成对应python程序，程序需要能够调取电脑文件，生成完整载具调度方案，并计算出物件平均等待运送时间和物件平均等待治疗时间",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 4,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": []
+    },
+    "F:\\ASC_track\\asc-track-designer": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "> 我要重构这个项目,请你作为指导者来指挥这次重构.去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!'",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        },
+        {
+          "display": "> 我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!'",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        },
+        {
+          "display": "> 我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!'",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit ",
+          "pastedContents": {}
+        },
+        {
+          "display": "> 我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!'",
+          "pastedContents": {}
+        },
+        {
+          "display": "> 我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!",
+          "pastedContents": {}
+        },
+        {
+          "display": "根据上面的思考 整合完整的项目功能文档",
+          "pastedContents": {}
+        },
+        {
+          "display": "> 我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!'",
+          "pastedContents": {}
+        },
+        {
+          "display": "\b\b\b> 我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!'",
+          "pastedContents": {}
+        },
+        {
+          "display": "> 我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!'",
+          "pastedContents": {}
+        },
+        {
+          "display": "/context ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/clear ",
+          "pastedContents": {}
+        },
+        {
+          "display": "> 我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!",
+          "pastedContents": {}
+        },
+        {
+          "display": "我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!",
+          "pastedContents": {}
+        },
+        {
+          "display": "我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署    \n,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你    \n重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!",
+          "pastedContents": {}
+        },
+        {
+          "display": "我要重构这个项目,请你作为指导者来指挥这次重构,你将会领导多个agent,使用haiku4.5模型的多个勤恳靠谱的老实的AI,分配他们去阅读全篇的项目所实现的功能!注意是整个项目所实现的功能!包括vercel自动部署,本地打包成一键启动的exe,包括其他UI的美化!包括这个赛道设计器的全部功能,然后不涉及到实际上的技术问题,只是用一篇非常详细的文档来记录这个项目实现的功能,用中文来实现,然后我会在另外一个工作区,让你重新根据那个文档来从头搭建一个新的项目,所以这个文档异常的重要!非常重要!",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/init ",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "hasCompletedProjectOnboarding": true,
+      "lastTotalWebSearchRequests": 0
+    },
+    "C:\\Windows\\System32": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "你可以做什么吗",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {
+        "chrome-devtools": {
+          "type": "stdio",
+          "command": "cmd /c npx chrome-devtools-mcp@latest",
+          "args": [],
+          "env": {}
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": []
+    },
+    "F:\\ASC_track\\asc-track-designer-new": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "/mcp ",
+          "pastedContents": {}
+        },
+        {
+          "display": "请使用 chrome-devtools MCP 打开 http://localhost:8080 并帮我分析 GitHub OAuth 登录问题。\n目标：点击“使用 \"登录”按钮，观察跳转过程，查看是否有错误请求或回调异常。\n请调用相关的 DevTools 工具（例如 navigate、getElementsBySelector、clickElement、getNetworkRequests），一步步找出登录失败的原因。\n",
+          "pastedContents": {}
+        },
+        {
+          "display": "claude chat --system \"\n你现在是我的开发助手，拥有完整的工程师级推理和排错能力。\n请在不请求额外许可的前提下，直接实现我的需求。\n要求：\n1. 代码简洁高效，遵循实际工程标准。\n2. 输出结果可拓展、易维护。\n3. 遇到不确定点时，先自行假设合理条件继续完成。\n4. 不编造信息，不虚构库、函数或命令。\n5. 当涉及多种方案时，优先给出工业上可行且最常用的方案。\n6. 所有回答以专业工程师口吻输出。\n7. 收到任务后，先分析目标 → 规划步骤 → 实现代码 → 自我检查 → 输出最终结果。\n\"\n",
+          "pastedContents": {}
+        },
+        {
+          "display": "📁 Data directory: ./data\n🔐 GitHub OAuth enabled\n   Callback URL: http://localhost:8080/api/auth/github/callback\n🛡️  Rate limiting enabled:\n   - Upload: 5 req/10min\n   - Download: 20 req/min\n   - API: 30 req/min\n2025/10/22 17:10:37 \"GET http://localhost:8080/ HTTP/1.1\" from [::1]:4985 - 200 419B in 69.5873ms\n2025/10/22 17:10:37 \"GET http://localhost:8080/assets/index-40_L6FQs.js HTTP/1.1\" from [::1]:4985 - 200 205340B in 505.1µs\n2025/10/22 17:10:37 \"GET http://localhost:8080/assets/index-C3AP_tIp.css HTTP/1.1\" from [::1]:14036 - 200 297B in 0s\ntime=2025-10-22T17:10:37.985+08:00 level=ERROR msg=context中没有用户信息\n2025/10/22 17:10:37 \"GET http://localhost:8080/api/auth/user HTTP/1.1\" from [::1]:4985 - 401 22B in 0s\n2025/10/22 17:10:40 \"GET http://localhost:8080/api/tracks?page=1&size=20&minLength=500&maxLength=5000 HTTP/1.1\" from [::1]:4985 - 200 66B in 1.5053ms\n2025/10/22 17:10:43 \"GET http://localhost:8080/api/auth/github HTTP/1.1\" from [::1]:4985 - 200 241B in 0s\n2025/10/22 17:10:44 \"GET http://localhost:8080/api/auth/github HTTP/1.1\" from [::1]:14036 - 200 241B in 0s\ntime=2025-10-22T17:10:45.653+08:00 level=INFO msg=用户登录成功 user=ZhangStudyLife user_id=174326754\n2025/10/22 17:10:45 \"GET http://localhost:8080/api/auth/github/callback?code=80709109493a662b10a3&state=uhN96wfP8XX5ctVkfKF4zicQgd3U47JF0IgdQAi2ZP8%3D HTTP/1.1\" from [::1]:4985 - 302 357B in 1.2411304s\ntime=2025-10-22T17:10:46.311+08:00 level=INFO msg=用户登录成功 user=ZhangStudyLife user_id=174326754\n2025/10/22 17:10:46 \"GET http://localhost:8080/api/auth/github/callback?code=c8ad268af3eef6eb997a&state=sA3yX3Wl15E_0zfkzsom0k0q6oA9bEoxasrjPxLUoMM%3D HTTP/1.1\" from [::1]:14036 - 302 357B in 882.8958ms\n2025/10/22 17:10:46 \"GET http://localhost:8080/?auth_success=true HTTP/1.1\" from [::1]:14036 - 200 419B in 0s\n2025/10/22 17:10:46 \"GET http://localhost:8080/assets/index-40_L6FQs.js HTTP/1.1\" from [::1]:14036 - 200 205340B in 0s\n2025/10/22 17:10:46 \"GET http://localhost:8080/assets/index-C3AP_tIp.css HTTP/1.1\" from [::1]:9593 - 200 297B in 0s\ntime=2025-10-22T17:10:46.403+08:00 level=ERROR msg=context中没有用户信息",
+          "pastedContents": {}
+        },
+        {
+          "display": "PS F:\\ASC_track\\asc-track-designer-new\\web> cd f:\\ASC_track\\asc-track-designer-new; go build -o trackd.exe ./cmd/trackd; Get-Process -Name trackd -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Milliseconds 500; .\\trackd.exe\n2025/10/22 16:05:07 Failed to initialize store: SQL logic error: no such column: likes (1)\nPS F:\\ASC_track\\asc-track-designer-new>",
+          "pastedContents": {}
+        },
+        {
+          "display": "继续",
+          "pastedContents": {}
+        },
+        {
+          "display": "我在local部署了,然后我也github认证了,但是认证成功后url变成了http://localhost:8080/?login=success,但是我点击分享,还告诉我要进行登录,点击之后,网页会刷新,但是结果还是进入赛道编辑器,也没有登陆成功的账号提示这样的.会不会有风险啊 我希望可以优化这部分的登录的内容,同时显性显示在url会不会有问题,是不是最好可以记录登录信息,不要重复登录.另外我希望可以将地图库变成一个分享点赞的社群,如果有人从地图库应用也需要绑定github,然后点赞就不需要绑定,这样大家都愿意上传自己的地图了!",
+          "pastedContents": {}
+        },
+        {
+          "display": "跳转到github之后 显示github处的404 , 终端日志为:PS F:\\ASC_track\\asc-track-designer-new\\web> cd f:\\ASC_track\\asc-track-designer-new; go build -o trackd.exe ./cmd/trackd; Get-Process -Name trackd -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Milliseconds 500; .\\trackd.exe\n2025/10/22 14:56:05 WARNING: JWT_SECRET not set, using insecure default. Set JWT_SECRET environment variable in production!\n🚀 ASC Track Designer starting on http://localhost:8080\n📁 Data directory: ./data\n⚠️  GitHub OAuth not configured (uploads will be anonymous)\n   Set GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET to enable authentication\n🛡️  Rate limiting enabled:\n   - Upload: 5 req/10min\n   - Download: 20 req/min\n   - API: 30 req/min\n2025/10/22 14:56:05 \"GET http://localhost:8080/ HTTP/1.1\" from [::1]:4908 - 200 419B in 71.2244ms\n2025/10/22 14:56:05 \"GET http://localhost:8080/assets/index-Cs_6bpdX.js HTTP/1.1\" from [::1]:4908 - 200 204314B in 0s\n2025/10/22 14:56:05 \"GET http://localhost:8080/assets/index-C3AP_tIp.css HTTP/1.1\" from [::1]:12073 - 200 297B in 0s\ntime=2025-10-22T14:56:05.569+08:00 level=WARN msg=缺少认证token path=/api/auth/user\n2025/10/22 14:56:05 \"GET http://localhost:8080/api/auth/user HTTP/1.1\" from [::1]:4908 - 401 36B in 0s\n2025/10/22 14:56:07 \"GET http://localhost:8080/api/auth/github HTTP/1.1\" from [::1]:4908 - 200 212B in 0s , 然后跳转的网页是:https://github.com/login/oauth/authorize?client_id=&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fapi%2Fauth%2Fcallback&state=NY3HqwyRa_2Bp5QZBWxw9AM8m7e_F3zNkeO41u81uHg=&scope=user:email 请修复",
+          "pastedContents": {}
+        },
+        {
+          "display": "好样的继续,要求详细测试,然后记得去掉测试的部分,你要确保你结束编码测试之后,给我的就是完美实现项目需求的",
+          "pastedContents": {}
+        },
+        {
+          "display": "继续",
+          "pastedContents": {}
+        },
+        {
+          "display": "我希望可以加入添加速率限制（Rate Limiting）,github认证 , 方便回溯,实现赛道标签系统!你来领导其他多个agents去思考各个模块的实现,然后你进行详细的审核各个agent修改的部分的代码,然后实现上述的功能",
+          "pastedContents": {}
+        },
+        {
+          "display": "有关于当前项目部署到debian服务器上面并可以让所有人都开放是否有问题呢?这个问题指的是1. 只是单纯当前项目部署到服务器上面并让大家访问有没有问题? 2.是否存在安全漏洞,导致我部署到公网上,导致服务器被人爆破,攻击,以至于蒙受金钱的损失 3.对于赛道库的管理,所有人都可以上传是不是不合适,或者是否对于赛道库需要进行一定程度管理,要么就是加入简单的github账号认证?或者QQ认证?并对赛道可以选择标签Tag,长度进行筛选等,同时给我个人留出服务器的后门,可以删除某些恶意上传的赛道等 请你进行深度思考上述的问题",
+          "pastedContents": {}
+        },
+        {
+          "display": "PNG图片的导出最好可以支持16K的,这样会更好看!",
+          "pastedContents": {}
+        },
+        {
+          "display": "我现在不是可以在8080开放端口了吗? 那我自己可以输入http://localhost:8080/访问到 , 我希望我在局域网中打开,方便让我的朋友进行测试,这是我的ip信息:无线局域网适配器 WLAN:\n\n   连接特定的 DNS 后缀 . . . . . . . : lan\n   IPv4 地址 . . . . . . . . . . . . : 192.168.110.183\n   子网掩码  . . . . . . . . . . . . : 255.255.255.0\n   默认网关. . . . . . . . . . . . . : 192.168.110.1 但是他输入192.168.110.1:8080无法访问,请你帮我",
+          "pastedContents": {}
+        },
+        {
+          "display": "我发现你这个在绘制区域的里面有吸附点,有赛道的边界,稍微可以看出来赛道和赛道之间的间隔,至少可以看出赛道的轮廓,但是在你的png导出,只有纯白色的,根本看不出赛道和赛道之间的区别,变成了一片的白色,反而对于铺设赛道来说不方便",
+          "pastedContents": {}
+        },
+        {
+          "display": "我画好的赛道导出png之后,那个png里面的白色的赛道都是混乱的 , 右上角的BOM表格数据都是对的,请你修复png里面的赛道混乱的问题,提高清晰度,还有修复查看BOM表里面的赛道长度用m来计量而不是cm , 注意务必思考详细,PNG清晰度务必大于8K,以及导出的赛道必须正确!比例等都正确的!",
+          "pastedContents": {}
+        },
+        {
+          "display": "现在导出png,进度条会拉,然后提示一直都是报错,❌ 错误: 生成图片失败",
+          "pastedContents": {}
+        },
+        {
+          "display": "导出PNG的时候,按下导出,进度就立刻到90%,但是就看似卡住了,一直导出不来,这个时候按下取消,也一直取消不来,修复这个bug",
+          "pastedContents": {}
+        },
+        {
+          "display": "我没有看到有什么导出PNG的选项,看到的也是旧版本UI,我也强制刷新了,请你解决",
+          "pastedContents": {}
+        },
+        {
+          "display": "希望可以增加一个PNG导出功能,因为画布非常大,所以你需要找到合适的赛道的合适的左右边界 上下边界,然后进行合适的导出为非常精细的PNG(16K清晰度),最右侧要有BOM表格的导出,要求UI精美好看! 非常好看详细!然后我觉得当前主界面左边一列那个工具栏不是很好看,不是很优雅,包括工具栏太大,标签很大,然后很多不太常用的也没必要一直放在那边.优化各种UI,希望是现代简约风格的UI",
+          "pastedContents": {}
+        },
+        {
+          "display": "现在这个赛道编辑器需要实现新的功能,也就是优化云端分享功能.我把这个项目部署到我的云服务器上面,或者我在本地打开,别人可以访问公网ip或者域名可以直接访问到我的云服务器,或者在局域网内别人直接访问我的ip+端口,有一个界面可以直接进行分享赛道和分享地图.我举个例子,我在我的电脑上画好了赛道,同时赛道肯定有对应的地图,然后我点击分享,输入地图的名称和描述就可以上传到服务器,然后在服务器就保存了对应的地图,我想要查看地图库,就可以点击,在里面可以直接以类似于赛道缩略图的形式,查看别人所有人上传的地图,在地图库当中显示了每个赛道的名称和简介还有地图长度,点进去可以查看详情,然后选择一键应用在本地或者选择下载json文件.这样的功能呢",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        },
+        {
+          "display": "需要你修复一个小问题,现在是我按下某个赛道皮,赛道的绿色吸附点会尝试吸附其他的点,但是当我选中某个赛道皮,这个赛道皮的红色的吸附点无法尝试吸附其他的吸附点!在这里不用因为颜色区别对待! 另外需要加上尺寸的自定义,也就是希望可以例如输入快捷指令的这样 比如说某个方框内我输入L56,就可以生成L56尺寸的赛道.同时对于ctrl多选赛道皮,相当于他们绑在一起了,那我拖动他们应该是多个一起移动的!不然就没有多选的意义了!另外BOM的生成表格不用一直生成在右边,而是可选按键这样的,如果按下以后,会新出一个界面为BOM表这样的",
+          "pastedContents": {}
+        },
+        {
+          "display": "\b\b\b\b\b\b弯道旁边是不需要灰色的边界的!这个你搞错了!就是和直道一样处理就可以了!",
+          "pastedContents": {}
+        },
+        {
+          "display": "继续",
+          "pastedContents": {}
+        },
+        {
+          "display": "请你现在依据Claude.md,进行ultra think,实现:拖拽式设计 - 直观的可视化赛道布局\n\n精确测量 - 支持吸附点间距离测量2. 等待打开\n\n智能吸附 - 自动对齐和连接赛道元件,标准元件库 - 多种规格直道和弯道 - 浏览器会自动打开设计器,服务器端方便部署,大家分享地图文件到服务器,可以查看别人的在线地图,直道系列 - 点击按钮添加赛道元件\nL25 (25cm) / L37.5 (37.5cm) / L50 (50cm) - 拖拽移动和布局\n\nL75 (75cm) / L100 (100cm)R50-30° / R50-45° / R50-90° (半径 50cm)- 关闭浏览器标签页\n\nR70-45° (半径 70cm)- 在黑色窗口按任意键关闭\n\nR100-60° (半径 100cm),实现更强大的功能,选中某个赛道tab自动旋转15°等!统一实现!",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit ",
+          "pastedContents": {}
+        },
+        {
+          "display": "请你详细阅读\"项目功能详细文档\",我希望你可以兼容之前的赛道导出的json文件,同时你可以选择更加优秀的技术栈,而不一定一定要是nodejs,目标是满足我的需求!我的需求如下: \n1.方便部署打包,是我理解意义中的打包,对于新手小白来说无脑就可以实现双击运行服务. \n2.方便部署到任何的服务器上面去,一方面就是对配置环境简单,对于Ubuntu电脑和Debian系统都可以进行方便的部署,同时大家都可以通过公网进行访问 4. \n然后要加入新的功能,也就是可以直接上传自己的赛道图纸json文件,就是相当于分享功能,大家可以看到有一个新的界面,类似于大家的赛道分享库这样子的 \n5.同时优化之前的赛道bug,类似于计算赛道长度的问题,以及增添更多可以的选项,不用一些花里胡哨的快捷键的功能.之前拖动赛道和选择都有种鼠标指向的地方不是对应的地方的感觉,手感不是很舒服!希望你可    \n文档.md\",这个md是之前的赛道绘图器总结的文档,但是由于存在代码杂糅,技术栈可能不全面或者不合适,以及功能的确\n实,难以在云服务器部署让大家访问和分享,所以我希望你可以重新做一个新版的赛道绘图器,先写出整个项目的框架和架构,一个md文档来确定项目的大致框架,留出未来增加新功能的空间",
+          "pastedContents": {}
+        },
+        {
+          "display": " 请你详细阅读\"项目功能详细文档\",我希望你可以兼容之前的赛道导出的json文件,同时你可以选择更加优秀的技术栈,而不一定一定要是nodejs,目标是满足我的需求!我的需求如下: \n1.方便部署打包,是我理解意义中的打包,对于新手小白来说无脑就可以实现双击运行服务. \n2.方便部署到任何的服务器上面去,一方面就是对配置环境简单,对于Ubuntu电脑和Debian系统都可以进行方便的部署,同时大家都可以通过公网进行访问 4. \n然后要加入新的功能,也就是可以直接上传自己的赛道图纸json文件,就是相当于分享功能,大家可以看到有一个新的界面,类似于大家的赛道分享库这样子的 \n5.同时优化之前的赛道bug,类似于计算赛道长度的问题,以及增添更多可以的选项,不用一些花里胡哨的快捷键的功能.之前拖动赛道和选择都有种鼠标指向的地方不是对应的地方的感觉,手感不是很舒服!希望你可    \n以想出一种更符合人类直觉画图的方式来进行pvc赛道的绘制 \n6.希望可以自动画图赛道,因为之前的赛道的尺寸都是定的,那么你是否可以进行赛道尺寸的自定义呢,一般来说赛道可以看成多边形,你可以赛道信息都用 \n0代表原点,1是第一个点,其数据就是二维坐标轴的Xm,Ym,然后有2,3,4,5.... \n然后赛道的边界就是0->1这根连线,1->2这根连线,以此类推,例如最普通的赛道长方形,就是0123一共四个点围起来的四边形,这个赛道边界尺寸最好也可以保存,如果是别人下载到自己电脑上使用那么再次打开肯\n定要记录上次的赛道边界信息和上面赛道皮的位置.如果是访问部署在云服务器上面的,最好也要有cookie来进行记录,同时希望赛道的边界信息这个也可以类似于赛道地图做一个上传服务器,和分享的地方! \n接下里你要做的就是分析我上面的需求,以我当前的需求为最最最主要的,参考\"项目功能详细文档.md\",这个md是之前的赛道绘图器总结的文档,但是由于存在代码杂糅,技术栈可能不全面或者不合适,以及功能的确\n实,难以在云服务器部署让大家访问和分享,所以我希望你可以重新做一个新版的赛道绘图器,先写出整个项目的框架和架构,一个md文档来确定项目的大致框架,留出未来增加新功能的空间",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "请你详细阅读\"项目功能详细文档\",我希望你可以兼容之前的赛道导出的json文件,同时你可以选择更加优秀的技术栈,而不一定一定要是nodejs,目标是满足我的需求!我的需求如下: 1.方便部署打包,是我理解意义中的打包,对于新手小白来说无脑就可以实现双击运行服务. 2.方便部署到任何的服务器上面去,一方面就是对配置环境简单,对于Ubuntu电脑和Debian系统都可以进行方便的部署,同时大家都可以通过公网进行访问 4. 然后要加入新的功能,也就是可以直接上传自己的赛道图纸json文件,就是相当于分享功能,大家可以看到有一个新的界面,类似于大家的赛道分享库这样子的 5.同时优化之前的赛道bug,类似于计算赛道长度的问题,以及增添更多可以的选项,不用一些花里胡哨的快捷键的功能.之前拖动赛道和选择都有种鼠标指向的地方不是对应的地方的感觉,手感不是很舒服!希望你可以想出一种更符合人类直觉画图的方式来进行pvc赛道的绘制 6.希望可以自动画图赛道,因为之前的赛道的尺寸都是定的,那么你是否可以进行赛道尺寸的自定义呢,一般来说赛道可以看成多边形,你可以赛道信息都用 0代表原点,1是第一个点,其数据就是二维坐标轴的Xm,Ym,然后有2,3,4,5.... 然后赛道的边界就是0->1这根连线,1->2这根连线,以此类推,例如最普通的赛道长方形,就是0123一共四个点围起来的四边形,这个赛道边界尺寸最好也可以保存,如果是别人下载到自己电脑上使用那么再次打开肯定要记录上次的赛道边界信息和上面赛道皮的位置.如果是访问部署在云服务器上面的,最好也要有cookie来进行记录,同时希望赛道的边界信息这个也可以类似于赛道地图做一个上传服务器,和分享的地方! 接下里你要做的就是分析我上面的需求,以我当前的需求为最最最主要的,参考\"项目功能详细文档.md\",这个md是之前的赛道绘图器总结的文档,但是由于存在代码杂糅,技术栈可能不全面或者不合适,以及功能的确实,难以在云服务器部署让大家访问和分享,所以我希望你可以重新做一个新版的赛道绘图器,先写出整个项目的框架和架构,一个md文档来确定项目的大致框架,留出未来增加新功能的空间",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        },
+        {
+          "display": "你好",
+          "pastedContents": {}
+        },
+        {
+          "display": "/model ",
+          "pastedContents": {}
+        }
+      ],
+      "mcpContextUris": [],
+      "mcpServers": {
+        "chrome-devtools": {
+          "type": "stdio",
+          "command": "cmd /c npx chrome-devtools-mcp@latest",
+          "args": [],
+          "env": {}
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 3,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "lastTotalWebSearchRequests": 0,
+      "hasCompletedProjectOnboarding": true
+    }
+  },
+  "shiftEnterKeyBindingInstalled": true,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "1.0.124",
+  "hasOpusPlanDefault": false,
+  "subscriptionNoticeCount": 0,
+  "hasAvailableSubscription": false,
+  "isQualifiedForDataSharing": false,
+  "hasAcknowledgedCostThreshold": true,
+  "sonnet45MigrationComplete": true,
+  "sonnet45MigrationTimestamp": 1759741355045,
+  "cachedChangelog": "# Changelog\n\n## 2.0.25\n\n- Removed legacy SDK entrypoint. Please migrate to @anthropic-ai/claude-agent-sdk for future SDK updates: https://docs.claude.com/en/docs/claude-code/sdk/migration-guide\n\n## 2.0.24\n\n- Fixed a bug where project-level skills were not loading when --setting-sources 'project' was specified\n- Claude Code Web: Support for Web -> CLI teleport\n- Sandbox: Releasing a sandbox mode for the BashTool on Linux & Mac\n\n## 2.0.22\n\n- Fixed content layout shift when scrolling through slash commands\n- IDE: Add toggle to enable/disable thinking.\n- Fix bug causing duplicate permission prompts with parallel tool calls\n- Add support for enterprise managed MCP allowlist and denylist\n\n## 2.0.21\n\n- Support MCP `structuredContent` field in tool responses\n- Added an interactive question tool\n- Claude will now ask you questions more often in plan mode\n- Added Haiku 4.5 as a model option for Pro users\n- Fixed an issue where queued commands don't have access to previous messages' output\n\n## 2.0.20\n\n- Added support for Claude Skills\n\n## 2.0.19\n\n- Auto-background long-running bash commands instead of killing them. Customize with BASH_DEFAULT_TIMEOUT_MS\n- Fixed a bug where Haiku was unnecessarily called in print mode\n\n## 2.0.17\n\n- Added Haiku 4.5 to model selector!\n- Haiku 4.5 automatically uses Sonnet in plan mode, and Haiku for execution (i.e. SonnetPlan by default)\n- 3P (Bedrock and Vertex) are not automatically upgraded yet. Manual upgrading can be done through setting `ANTHROPIC_DEFAULT_HAIKU_MODEL`\n- Introducing the Explore subagent. Powered by Haiku it'll search through your codebase efficiently to save context!\n- OTEL: support HTTP_PROXY and HTTPS_PROXY\n- `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC` now disables release notes fetching\n\n## 2.0.15\n\n- Fixed bug with resuming where previously created files needed to be read again before writing\n- Fixed bug with `-p` mode where @-mentioned files needed to be read again before writing\n\n## 2.0.14\n\n- Fix @-mentioning MCP servers to toggle them on/off\n- Improve permission checks for bash with inline env vars\n- Fix ultrathink + thinking toggle\n- Reduce unnecessary logins\n- Document --system-prompt\n- Several improvements to rendering\n- Plugins UI polish\n\n## 2.0.13\n\n- Fixed `/plugin` not working on native build\n\n## 2.0.12\n\n- **Plugin System Released**: Extend Claude Code with custom commands, agents, hooks, and MCP servers from marketplaces\n- `/plugin install`, `/plugin enable/disable`, `/plugin marketplace` commands for plugin management\n- Repository-level plugin configuration via `extraKnownMarketplaces` for team collaboration\n- `/plugin validate` command for validating plugin structure and configuration\n- Plugin announcement blog post at https://www.anthropic.com/news/claude-code-plugins\n- Plugin documentation available at https://docs.claude.com/en/docs/claude-code/plugins\n- Comprehensive error messages and diagnostics via `/doctor` command\n- Avoid flickering in `/model` selector\n- Improvements to `/help`\n- Avoid mentioning hooks in `/resume` summaries\n- Changes to the \"verbose\" setting in `/config` now persist across sessions\n\n## 2.0.11\n\n- Reduced system prompt size by 1.4k tokens\n- IDE: Fixed keyboard shortcuts and focus issues for smoother interaction\n- Fixed Opus fallback rate limit errors appearing incorrectly\n- Fixed /add-dir command selecting wrong default tab\n\n## 2.0.10\n\n- Rewrote terminal renderer for buttery smooth UI\n- Enable/disable MCP servers by @mentioning, or in /mcp\n- Added tab completion for shell commands in bash mode\n- PreToolUse hooks can now modify tool inputs\n- Press Ctrl-G to edit your prompt in your system's configured text editor\n- Fixes for bash permission checks with environment variables in the command\n\n## 2.0.9\n\n- Fix regression where bash backgrounding stopped working\n\n## 2.0.8\n\n- Update Bedrock default Sonnet model to `global.anthropic.claude-sonnet-4-5-20250929-v1:0`\n- IDE: Add drag-and-drop support for files and folders in chat\n- /context: Fix counting for thinking blocks\n- Improve message rendering for users with light themes on dark terminals\n- Remove deprecated .claude.json allowedTools, ignorePatterns, env, and todoFeatureEnabled config options (instead, configure these in your settings.json)\n\n## 2.0.5\n\n- IDE: Fix IME unintended message submission with Enter and Tab\n- IDE: Add \"Open in Terminal\" link in login screen\n- Fix unhandled OAuth expiration 401 API errors\n- SDK: Added SDKUserMessageReplay.isReplay to prevent duplicate messages\n\n## 2.0.1\n\n- Skip Sonnet 4.5 default model setting change for Bedrock and Vertex\n- Various bug fixes and presentation improvements\n\n## 2.0.0\n\n- New native VS Code extension\n- Fresh coat of paint throughout the whole app\n- /rewind a conversation to undo code changes\n- /usage command to see plan limits\n- Tab to toggle thinking (sticky across sessions)\n- Ctrl-R to search history\n- Unshipped claude config command\n- Hooks: Reduced PostToolUse 'tool_use' ids were found without 'tool_result' blocks errors\n- SDK: The Claude Code SDK is now the Claude Agent SDK\n- Add subagents dynamically with `--agents` flag\n\n## 1.0.126\n\n- Enable /context command for Bedrock and Vertex\n- Add mTLS support for HTTP-based OpenTelemetry exporters\n\n## 1.0.124\n\n- Set `CLAUDE_BASH_NO_LOGIN` environment variable to 1 or true to to skip login shell for BashTool\n- Fix Bedrock and Vertex environment variables evaluating all strings as truthy\n- No longer inform Claude of the list of allowed tools when permission is denied\n- Fixed security vulnerability in Bash tool permission checks\n- Improved VSCode extension performance for large files\n\n## 1.0.123\n\n- Bash permission rules now support output redirections when matching (e.g., `Bash(python:*)` matches `python script.py > output.txt`)\n- Fixed thinking mode triggering on negation phrases like \"don't think\"\n- Fixed rendering performance degradation during token streaming\n- Added SlashCommand tool, which enables Claude to invoke your slash commands. https://docs.claude.com/en/docs/claude-code/slash-commands#SlashCommand-tool\n- Enhanced BashTool environment snapshot logging\n- Fixed a bug where resuming a conversation in headless mode would sometimes enable thinking unnecessarily\n- Migrated --debug logging to a file, to enable easy tailing & filtering\n\n## 1.0.120\n\n- Fix input lag during typing, especially noticeable with large prompts\n- Improved VSCode extension command registry and sessions dialog user experience\n- Enhanced sessions dialog responsiveness and visual feedback\n- Fixed IDE compatibility issue by removing worktree support check\n- Fixed security vulnerability where Bash tool permission checks could be bypassed using prefix matching\n\n## 1.0.119\n\n- Fix Windows issue where process visually freezes on entering interactive mode\n- Support dynamic headers for MCP servers via headersHelper configuration\n- Fix thinking mode not working in headless sessions\n- Fix slash commands now properly update allowed tools instead of replacing them\n\n## 1.0.117\n\n- Add Ctrl-R history search to recall previous commands like bash/zsh\n- Fix input lag while typing, especially on Windows\n- Add sed command to auto-allowed commands in acceptEdits mode\n- Fix Windows PATH comparison to be case-insensitive for drive letters\n- Add permissions management hint to /add-dir output\n\n## 1.0.115\n\n- Improve thinking mode display with enhanced visual effects\n- Type /t to temporarily disable thinking mode in your prompt\n- Improve path validation for glob and grep tools\n- Show condensed output for post-tool hooks to reduce visual clutter\n- Fix visual feedback when loading state completes\n- Improve UI consistency for permission request dialogs\n\n## 1.0.113\n\n- Deprecated piped input in interactive mode\n- Move Ctrl+R keybinding for toggling transcript to Ctrl+O\n\n## 1.0.112\n\n- Transcript mode (Ctrl+R): Added the model used to generate each assistant message\n- Addressed issue where some Claude Max users were incorrectly recognized as Claude Pro users\n- Hooks: Added systemMessage support for SessionEnd hooks\n- Added `spinnerTipsEnabled` setting to disable spinner tips\n- IDE: Various improvements and bug fixes\n\n## 1.0.111\n\n- /model now validates provided model names\n- Fixed Bash tool crashes caused by malformed shell syntax parsing\n\n## 1.0.110\n\n- /terminal-setup command now supports WezTerm\n- MCP: OAuth tokens now proactively refresh before expiration\n- Fixed reliability issues with background Bash processes\n\n## 1.0.109\n\n- SDK: Added partial message streaming support via `--include-partial-messages` CLI flag\n\n## 1.0.106\n\n- Windows: Fixed path permission matching to consistently use POSIX format (e.g., `Read(//c/Users/...)`)\n\n## 1.0.97\n\n- Settings: /doctor now validates permission rule syntax and suggests corrections\n\n## 1.0.94\n\n- Vertex: add support for global endpoints for supported models\n- /memory command now allows direct editing of all imported memory files\n- SDK: Add custom tools as callbacks\n- Added /todos command to list current todo items\n\n## 1.0.93\n\n- Windows: Add alt + v shortcut for pasting images from clipboard\n- Support NO_PROXY environment variable to bypass proxy for specified hostnames and IPs\n\n## 1.0.90\n\n- Settings file changes take effect immediately - no restart required\n\n## 1.0.88\n\n- Fixed issue causing \"OAuth authentication is currently not supported\"\n- Status line input now includes `exceeds_200k_tokens`\n- Fixed incorrect usage tracking in /cost.\n- Introduced `ANTHROPIC_DEFAULT_SONNET_MODEL` and `ANTHROPIC_DEFAULT_OPUS_MODEL` for controlling model aliases opusplan, opus, and sonnet.\n- Bedrock: Updated default Sonnet model to Sonnet 4\n\n## 1.0.86\n\n- Added /context to help users self-serve debug context issues\n- SDK: Added UUID support for all SDK messages\n- SDK: Added `--replay-user-messages` to replay user messages back to stdout\n\n## 1.0.85\n\n- Status line input now includes session cost info\n- Hooks: Introduced SessionEnd hook\n\n## 1.0.84\n\n- Fix tool_use/tool_result id mismatch error when network is unstable\n- Fix Claude sometimes ignoring real-time steering when wrapping up a task\n- @-mention: Add ~/.claude/\\* files to suggestions for easier agent, output style, and slash command editing\n- Use built-in ripgrep by default; to opt out of this behavior, set USE_BUILTIN_RIPGREP=0\n\n## 1.0.83\n\n- @-mention: Support files with spaces in path\n- New shimmering spinner\n\n## 1.0.82\n\n- SDK: Add request cancellation support\n- SDK: New additionalDirectories option to search custom paths, improved slash command processing\n- Settings: Validation prevents invalid fields in .claude/settings.json files\n- MCP: Improve tool name consistency\n- Bash: Fix crash when Claude tries to automatically read large files\n\n## 1.0.81\n\n- Released output styles, including new built-in educational output styles \"Explanatory\" and \"Learning\". Docs: https://docs.claude.com/en/docs/claude-code/output-styles\n- Agents: Fix custom agent loading when agent files are unparsable\n\n## 1.0.80\n\n- UI improvements: Fix text contrast for custom subagent colors and spinner rendering issues\n\n## 1.0.77\n\n- Bash tool: Fix heredoc and multiline string escaping, improve stderr redirection handling\n- SDK: Add session support and permission denial tracking\n- Fix token limit errors in conversation summarization\n- Opus Plan Mode: New setting in `/model` to run Opus only in plan mode, Sonnet otherwise\n\n## 1.0.73\n\n- MCP: Support multiple config files with `--mcp-config file1.json file2.json`\n- MCP: Press Esc to cancel OAuth authentication flows\n- Bash: Improved command validation and reduced false security warnings\n- UI: Enhanced spinner animations and status line visual hierarchy\n- Linux: Added support for Alpine and musl-based distributions (requires separate ripgrep installation)\n\n## 1.0.72\n\n- Ask permissions: have Claude Code always ask for confirmation to use specific tools with /permissions\n\n## 1.0.71\n\n- Background commands: (Ctrl-b) to run any Bash command in the background so Claude can keep working (great for dev servers, tailing logs, etc.)\n- Customizable status line: add your terminal prompt to Claude Code with /statusline\n\n## 1.0.70\n\n- Performance: Optimized message rendering for better performance with large contexts\n- Windows: Fixed native file search, ripgrep, and subagent functionality\n- Added support for @-mentions in slash command arguments\n\n## 1.0.69\n\n- Upgraded Opus to version 4.1\n\n## 1.0.68\n\n- Fix incorrect model names being used for certain commands like `/pr-comments`\n- Windows: improve permissions checks for allow / deny tools and project trust. This may create a new project entry in `.claude.json` - manually merge the history field if desired.\n- Windows: improve sub-process spawning to eliminate \"No such file or directory\" when running commands like pnpm\n- Enhanced /doctor command with CLAUDE.md and MCP tool context for self-serve debugging\n- SDK: Added canUseTool callback support for tool confirmation\n- Added `disableAllHooks` setting\n- Improved file suggestions performance in large repos\n\n## 1.0.65\n\n- IDE: Fixed connection stability issues and error handling for diagnostics\n- Windows: Fixed shell environment setup for users without .bashrc files\n\n## 1.0.64\n\n- Agents: Added model customization support - you can now specify which model an agent should use\n- Agents: Fixed unintended access to the recursive agent tool\n- Hooks: Added systemMessage field to hook JSON output for displaying warnings and context\n- SDK: Fixed user input tracking across multi-turn conversations\n- Added hidden files to file search and @-mention suggestions\n\n## 1.0.63\n\n- Windows: Fixed file search, @agent mentions, and custom slash commands functionality\n\n## 1.0.62\n\n- Added @-mention support with typeahead for custom agents. @<your-custom-agent> to invoke it\n- Hooks: Added SessionStart hook for new session initialization\n- /add-dir command now supports typeahead for directory paths\n- Improved network connectivity check reliability\n\n## 1.0.61\n\n- Transcript mode (Ctrl+R): Changed Esc to exit transcript mode rather than interrupt\n- Settings: Added `--settings` flag to load settings from a JSON file\n- Settings: Fixed resolution of settings files paths that are symlinks\n- OTEL: Fixed reporting of wrong organization after authentication changes\n- Slash commands: Fixed permissions checking for allowed-tools with Bash\n- IDE: Added support for pasting images in VSCode MacOS using ⌘+V\n- IDE: Added `CLAUDE_CODE_AUTO_CONNECT_IDE=false` for disabling IDE auto-connection\n- Added `CLAUDE_CODE_SHELL_PREFIX` for wrapping Claude and user-provided shell commands run by Claude Code\n\n## 1.0.60\n\n- You can now create custom subagents for specialized tasks! Run /agents to get started\n\n## 1.0.59\n\n- SDK: Added tool confirmation support with canUseTool callback\n- SDK: Allow specifying env for spawned process\n- Hooks: Exposed PermissionDecision to hooks (including \"ask\")\n- Hooks: UserPromptSubmit now supports additionalContext in advanced JSON output\n- Fixed issue where some Max users that specified Opus would still see fallback to Sonnet\n\n## 1.0.58\n\n- Added support for reading PDFs\n- MCP: Improved server health status display in 'claude mcp list'\n- Hooks: Added CLAUDE_PROJECT_DIR env var for hook commands\n\n## 1.0.57\n\n- Added support for specifying a model in slash commands\n- Improved permission messages to help Claude understand allowed tools\n- Fix: Remove trailing newlines from bash output in terminal wrapping\n\n## 1.0.56\n\n- Windows: Enabled shift+tab for mode switching on versions of Node.js that support terminal VT mode\n- Fixes for WSL IDE detection\n- Fix an issue causing awsRefreshHelper changes to .aws directory not to be picked up\n\n## 1.0.55\n\n- Clarified knowledge cutoff for Opus 4 and Sonnet 4 models\n- Windows: fixed Ctrl+Z crash\n- SDK: Added ability to capture error logging\n- Add --system-prompt-file option to override system prompt in print mode\n\n## 1.0.54\n\n- Hooks: Added UserPromptSubmit hook and the current working directory to hook inputs\n- Custom slash commands: Added argument-hint to frontmatter\n- Windows: OAuth uses port 45454 and properly constructs browser URL\n- Windows: mode switching now uses alt + m, and plan mode renders properly\n- Shell: Switch to in-memory shell snapshot to fix file-related errors\n\n## 1.0.53\n\n- Updated @-mention file truncation from 100 lines to 2000 lines\n- Add helper script settings for AWS token refresh: awsAuthRefresh (for foreground operations like aws sso login) and awsCredentialExport (for background operation with STS-like response).\n\n## 1.0.52\n\n- Added support for MCP server instructions\n\n## 1.0.51\n\n- Added support for native Windows (requires Git for Windows)\n- Added support for Bedrock API keys through environment variable AWS_BEARER_TOKEN_BEDROCK\n- Settings: /doctor can now help you identify and fix invalid setting files\n- `--append-system-prompt` can now be used in interactive mode, not just --print/-p.\n- Increased auto-compact warning threshold from 60% to 80%\n- Fixed an issue with handling user directories with spaces for shell snapshots\n- OTEL resource now includes os.type, os.version, host.arch, and wsl.version (if running on Windows Subsystem for Linux)\n- Custom slash commands: Fixed user-level commands in subdirectories\n- Plan mode: Fixed issue where rejected plan from sub-task would get discarded\n\n## 1.0.48\n\n- Fixed a bug in v1.0.45 where the app would sometimes freeze on launch\n- Added progress messages to Bash tool based on the last 5 lines of command output\n- Added expanding variables support for MCP server configuration\n- Moved shell snapshots from /tmp to ~/.claude for more reliable Bash tool calls\n- Improved IDE extension path handling when Claude Code runs in WSL\n- Hooks: Added a PreCompact hook\n- Vim mode: Added c, f/F, t/T\n\n## 1.0.45\n\n- Redesigned Search (Grep) tool with new tool input parameters and features\n- Disabled IDE diffs for notebook files, fixing \"Timeout waiting after 1000ms\" error\n- Fixed config file corruption issue by enforcing atomic writes\n- Updated prompt input undo to Ctrl+\\_ to avoid breaking existing Ctrl+U behavior, matching zsh's undo shortcut\n- Stop Hooks: Fixed transcript path after /clear and fixed triggering when loop ends with tool call\n- Custom slash commands: Restored namespacing in command names based on subdirectories. For example, .claude/commands/frontend/component.md is now /frontend:component, not /component.\n\n## 1.0.44\n\n- New /export command lets you quickly export a conversation for sharing\n- MCP: resource_link tool results are now supported\n- MCP: tool annotations and tool titles now display in /mcp view\n- Changed Ctrl+Z to suspend Claude Code. Resume by running `fg`. Prompt input undo is now Ctrl+U.\n\n## 1.0.43\n\n- Fixed a bug where the theme selector was saving excessively\n- Hooks: Added EPIPE system error handling\n\n## 1.0.42\n\n- Added tilde (`~`) expansion support to `/add-dir` command\n\n## 1.0.41\n\n- Hooks: Split Stop hook triggering into Stop and SubagentStop\n- Hooks: Enabled optional timeout configuration for each command\n- Hooks: Added \"hook_event_name\" to hook input\n- Fixed a bug where MCP tools would display twice in tool list\n- New tool parameters JSON for Bash tool in `tool_decision` event\n\n## 1.0.40\n\n- Fixed a bug causing API connection errors with UNABLE_TO_GET_ISSUER_CERT_LOCALLY if `NODE_EXTRA_CA_CERTS` was set\n\n## 1.0.39\n\n- New Active Time metric in OpenTelemetry logging\n\n## 1.0.38\n\n- Released hooks. Special thanks to community input in https://github.com/anthropics/claude-code/issues/712. Docs: https://docs.claude.com/en/docs/claude-code/hooks\n\n## 1.0.37\n\n- Remove ability to set `Proxy-Authorization` header via ANTHROPIC_AUTH_TOKEN or apiKeyHelper\n\n## 1.0.36\n\n- Web search now takes today's date into context\n- Fixed a bug where stdio MCP servers were not terminating properly on exit\n\n## 1.0.35\n\n- Added support for MCP OAuth Authorization Server discovery\n\n## 1.0.34\n\n- Fixed a memory leak causing a MaxListenersExceededWarning message to appear\n\n## 1.0.33\n\n- Improved logging functionality with session ID support\n- Added prompt input undo functionality (Ctrl+Z and vim 'u' command)\n- Improvements to plan mode\n\n## 1.0.32\n\n- Updated loopback config for litellm\n- Added forceLoginMethod setting to bypass login selection screen\n\n## 1.0.31\n\n- Fixed a bug where ~/.claude.json would get reset when file contained invalid JSON\n\n## 1.0.30\n\n- Custom slash commands: Run bash output, @-mention files, enable thinking with thinking keywords\n- Improved file path autocomplete with filename matching\n- Added timestamps in Ctrl-r mode and fixed Ctrl-c handling\n- Enhanced jq regex support for complex filters with pipes and select\n\n## 1.0.29\n\n- Improved CJK character support in cursor navigation and rendering\n\n## 1.0.28\n\n- Slash commands: Fix selector display during history navigation\n- Resizes images before upload to prevent API size limit errors\n- Added XDG_CONFIG_HOME support to configuration directory\n- Performance optimizations for memory usage\n- New attributes (terminal.type, language) in OpenTelemetry logging\n\n## 1.0.27\n\n- Streamable HTTP MCP servers are now supported\n- Remote MCP servers (SSE and HTTP) now support OAuth\n- MCP resources can now be @-mentioned\n- /resume slash command to switch conversations within Claude Code\n\n## 1.0.25\n\n- Slash commands: moved \"project\" and \"user\" prefixes to descriptions\n- Slash commands: improved reliability for command discovery\n- Improved support for Ghostty\n- Improved web search reliability\n\n## 1.0.24\n\n- Improved /mcp output\n- Fixed a bug where settings arrays got overwritten instead of merged\n\n## 1.0.23\n\n- Released TypeScript SDK: import @anthropic-ai/claude-code to get started\n- Released Python SDK: pip install claude-code-sdk to get started\n\n## 1.0.22\n\n- SDK: Renamed `total_cost` to `total_cost_usd`\n\n## 1.0.21\n\n- Improved editing of files with tab-based indentation\n- Fix for tool_use without matching tool_result errors\n- Fixed a bug where stdio MCP server processes would linger after quitting Claude Code\n\n## 1.0.18\n\n- Added --add-dir CLI argument for specifying additional working directories\n- Added streaming input support without require -p flag\n- Improved startup performance and session storage performance\n- Added CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR environment variable to freeze working directory for bash commands\n- Added detailed MCP server tools display (/mcp)\n- MCP authentication and permission improvements\n- Added auto-reconnection for MCP SSE connections on disconnect\n- Fixed issue where pasted content was lost when dialogs appeared\n\n## 1.0.17\n\n- We now emit messages from sub-tasks in -p mode (look for the parent_tool_use_id property)\n- Fixed crashes when the VS Code diff tool is invoked multiple times quickly\n- MCP server list UI improvements\n- Update Claude Code process title to display \"claude\" instead of \"node\"\n\n## 1.0.11\n\n- Claude Code can now also be used with a Claude Pro subscription\n- Added /upgrade for smoother switching to Claude Max plans\n- Improved UI for authentication from API keys and Bedrock/Vertex/external auth tokens\n- Improved shell configuration error handling\n- Improved todo list handling during compaction\n\n## 1.0.10\n\n- Added markdown table support\n- Improved streaming performance\n\n## 1.0.8\n\n- Fixed Vertex AI region fallback when using CLOUD_ML_REGION\n- Increased default otel interval from 1s -> 5s\n- Fixed edge cases where MCP_TIMEOUT and MCP_TOOL_TIMEOUT weren't being respected\n- Fixed a regression where search tools unnecessarily asked for permissions\n- Added support for triggering thinking non-English languages\n- Improved compacting UI\n\n## 1.0.7\n\n- Renamed /allowed-tools -> /permissions\n- Migrated allowedTools and ignorePatterns from .claude.json -> settings.json\n- Deprecated claude config commands in favor of editing settings.json\n- Fixed a bug where --dangerously-skip-permissions sometimes didn't work in --print mode\n- Improved error handling for /install-github-app\n- Bugfixes, UI polish, and tool reliability improvements\n\n## 1.0.6\n\n- Improved edit reliability for tab-indented files\n- Respect CLAUDE_CONFIG_DIR everywhere\n- Reduced unnecessary tool permission prompts\n- Added support for symlinks in @file typeahead\n- Bugfixes, UI polish, and tool reliability improvements\n\n## 1.0.4\n\n- Fixed a bug where MCP tool errors weren't being parsed correctly\n\n## 1.0.1\n\n- Added `DISABLE_INTERLEAVED_THINKING` to give users the option to opt out of interleaved thinking.\n- Improved model references to show provider-specific names (Sonnet 3.7 for Bedrock, Sonnet 4 for Console)\n- Updated documentation links and OAuth process descriptions\n\n## 1.0.0\n\n- Claude Code is now generally available\n- Introducing Sonnet 4 and Opus 4 models\n\n## 0.2.125\n\n- Breaking change: Bedrock ARN passed to `ANTHROPIC_MODEL` or `ANTHROPIC_SMALL_FAST_MODEL` should no longer contain an escaped slash (specify `/` instead of `%2F`)\n- Removed `DEBUG=true` in favor of `ANTHROPIC_LOG=debug`, to log all requests\n\n## 0.2.117\n\n- Breaking change: --print JSON output now returns nested message objects, for forwards-compatibility as we introduce new metadata fields\n- Introduced settings.cleanupPeriodDays\n- Introduced CLAUDE_CODE_API_KEY_HELPER_TTL_MS env var\n- Introduced --debug mode\n\n## 0.2.108\n\n- You can now send messages to Claude while it works to steer Claude in real-time\n- Introduced BASH_DEFAULT_TIMEOUT_MS and BASH_MAX_TIMEOUT_MS env vars\n- Fixed a bug where thinking was not working in -p mode\n- Fixed a regression in /cost reporting\n- Deprecated MCP wizard interface in favor of other MCP commands\n- Lots of other bugfixes and improvements\n\n## 0.2.107\n\n- CLAUDE.md files can now import other files. Add @path/to/file.md to ./CLAUDE.md to load additional files on launch\n\n## 0.2.106\n\n- MCP SSE server configs can now specify custom headers\n- Fixed a bug where MCP permission prompt didn't always show correctly\n\n## 0.2.105\n\n- Claude can now search the web\n- Moved system & account status to /status\n- Added word movement keybindings for Vim\n- Improved latency for startup, todo tool, and file edits\n\n## 0.2.102\n\n- Improved thinking triggering reliability\n- Improved @mention reliability for images and folders\n- You can now paste multiple large chunks into one prompt\n\n## 0.2.100\n\n- Fixed a crash caused by a stack overflow error\n- Made db storage optional; missing db support disables --continue and --resume\n\n## 0.2.98\n\n- Fixed an issue where auto-compact was running twice\n\n## 0.2.96\n\n- Claude Code can now also be used with a Claude Max subscription (https://claude.ai/upgrade)\n\n## 0.2.93\n\n- Resume conversations from where you left off from with \"claude --continue\" and \"claude --resume\"\n- Claude now has access to a Todo list that helps it stay on track and be more organized\n\n## 0.2.82\n\n- Added support for --disallowedTools\n- Renamed tools for consistency: LSTool -> LS, View -> Read, etc.\n\n## 0.2.75\n\n- Hit Enter to queue up additional messages while Claude is working\n- Drag in or copy/paste image files directly into the prompt\n- @-mention files to directly add them to context\n- Run one-off MCP servers with `claude --mcp-config <path-to-file>`\n- Improved performance for filename auto-complete\n\n## 0.2.74\n\n- Added support for refreshing dynamically generated API keys (via apiKeyHelper), with a 5 minute TTL\n- Task tool can now perform writes and run bash commands\n\n## 0.2.72\n\n- Updated spinner to indicate tokens loaded and tool usage\n\n## 0.2.70\n\n- Network commands like curl are now available for Claude to use\n- Claude can now run multiple web queries in parallel\n- Pressing ESC once immediately interrupts Claude in Auto-accept mode\n\n## 0.2.69\n\n- Fixed UI glitches with improved Select component behavior\n- Enhanced terminal output display with better text truncation logic\n\n## 0.2.67\n\n- Shared project permission rules can be saved in .claude/settings.json\n\n## 0.2.66\n\n- Print mode (-p) now supports streaming output via --output-format=stream-json\n- Fixed issue where pasting could trigger memory or bash mode unexpectedly\n\n## 0.2.63\n\n- Fixed an issue where MCP tools were loaded twice, which caused tool call errors\n\n## 0.2.61\n\n- Navigate menus with vim-style keys (j/k) or bash/emacs shortcuts (Ctrl+n/p) for faster interaction\n- Enhanced image detection for more reliable clipboard paste functionality\n- Fixed an issue where ESC key could crash the conversation history selector\n\n## 0.2.59\n\n- Copy+paste images directly into your prompt\n- Improved progress indicators for bash and fetch tools\n- Bugfixes for non-interactive mode (-p)\n\n## 0.2.54\n\n- Quickly add to Memory by starting your message with '#'\n- Press ctrl+r to see full output for long tool results\n- Added support for MCP SSE transport\n\n## 0.2.53\n\n- New web fetch tool lets Claude view URLs that you paste in\n- Fixed a bug with JPEG detection\n\n## 0.2.50\n\n- New MCP \"project\" scope now allows you to add MCP servers to .mcp.json files and commit them to your repository\n\n## 0.2.49\n\n- Previous MCP server scopes have been renamed: previous \"project\" scope is now \"local\" and \"global\" scope is now \"user\"\n\n## 0.2.47\n\n- Press Tab to auto-complete file and folder names\n- Press Shift + Tab to toggle auto-accept for file edits\n- Automatic conversation compaction for infinite conversation length (toggle with /config)\n\n## 0.2.44\n\n- Ask Claude to make a plan with thinking mode: just say 'think' or 'think harder' or even 'ultrathink'\n\n## 0.2.41\n\n- MCP server startup timeout can now be configured via MCP_TIMEOUT environment variable\n- MCP server startup no longer blocks the app from starting up\n\n## 0.2.37\n\n- New /release-notes command lets you view release notes at any time\n- `claude config add/remove` commands now accept multiple values separated by commas or spaces\n\n## 0.2.36\n\n- Import MCP servers from Claude Desktop with `claude mcp add-from-claude-desktop`\n- Add MCP servers as JSON strings with `claude mcp add-json <n> <json>`\n\n## 0.2.34\n\n- Vim bindings for text input - enable with /vim or /config\n\n## 0.2.32\n\n- Interactive MCP setup wizard: Run \"claude mcp add\" to add MCP servers with a step-by-step interface\n- Fix for some PersistentShell issues\n\n## 0.2.31\n\n- Custom slash commands: Markdown files in .claude/commands/ directories now appear as custom slash commands to insert prompts into your conversation\n- MCP debug mode: Run with --mcp-debug flag to get more information about MCP server errors\n\n## 0.2.30\n\n- Added ANSI color theme for better terminal compatibility\n- Fixed issue where slash command arguments weren't being sent properly\n- (Mac-only) API keys are now stored in macOS Keychain\n\n## 0.2.26\n\n- New /approved-tools command for managing tool permissions\n- Word-level diff display for improved code readability\n- Fuzzy matching for slash commands\n\n## 0.2.21\n\n- Fuzzy matching for /commands\n",
+  "changelogLastFetched": 1761136087638,
+  "lastReleaseNotesSeen": "2.0.25",
+  "hasUsedBackslashReturn": true,
+  "feedbackSurveyState": {
+    "lastShownTime": 1761077758686
+  }
+}
