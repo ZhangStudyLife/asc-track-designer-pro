@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { Canvas } from './components/Canvas'
-import { Toolbar } from './components/Toolbar'
+import { ModernToolbar } from './components/ModernToolbar'
 import { useEditorStore } from './store'
+import { AuthProvider } from './contexts/AuthContext'
 
 export function App() {
   const loadFromLocalStorage = useEditorStore(state => state.loadFromLocalStorage)
@@ -11,12 +12,14 @@ export function App() {
   }, [loadFromLocalStorage])
 
   return (
-    <div style={styles.container}>
-      <Toolbar />
-      <div style={styles.main}>
-        <Canvas />
+    <AuthProvider>
+      <div style={styles.container}>
+        <ModernToolbar />
+        <div style={styles.main}>
+          <Canvas />
+        </div>
       </div>
-    </div>
+    </AuthProvider>
   )
 }
 

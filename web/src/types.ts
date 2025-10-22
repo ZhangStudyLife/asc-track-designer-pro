@@ -1,6 +1,7 @@
 export interface TrackProject {
   id?: string
   name: string
+  description?: string
   version: string
   createdAt?: string
   updatedAt?: string
@@ -46,13 +47,26 @@ export interface BOMSummary {
   details?: Piece[]
 }
 
+export interface User {
+  id: string
+  username: string
+  email?: string
+  avatar?: string
+  createdAt?: string
+}
+
 export interface TrackMetadata {
   id: string
   name: string
+  description?: string
   uploaderId?: string
+  uploaderName?: string
+  uploaderAvatar?: string
   createdAt: string
   totalPieces: number
   totalLength: string
+  thumbnail?: string
+  tags?: string[] // 赛道标签
 }
 
 export interface APIResponse<T = any> {

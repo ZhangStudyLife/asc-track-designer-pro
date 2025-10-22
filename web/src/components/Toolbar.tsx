@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useEditorStore } from '../store'
 import { STRAIGHT_PIECES, CURVE_PIECES, createPieceInstance, TrackPieceDefinition } from '../trackPieces'
 import { Piece, Boundary } from '../types'
+import { ShareDialog } from './ShareDialog'
+import { TrackLibrary } from './TrackLibrary'
 
 export function Toolbar() {
   const { project, addPiece, deletePieces, selectedIds, setBoundary, saveToLocalStorage } = useEditorStore()
@@ -9,6 +11,8 @@ export function Toolbar() {
   const [quickInput, setQuickInput] = useState('')
   const [showBOM, setShowBOM] = useState(false)
   const [showBoundary, setShowBoundary] = useState(false)
+  const [showShare, setShowShare] = useState(false)
+  const [showLibrary, setShowLibrary] = useState(false)
 
   const handleAddPiece = (definition: TrackPieceDefinition) => {
     const piece = createPieceInstance(definition)
@@ -204,6 +208,17 @@ export function Toolbar() {
         </button>
       </div>
 
+      {/* 云端分享 */}
+      <div style={styles.section}>
+        <h3 style={styles.sectionTitle}>云端分享</h3>
+        <button onClick={() => setShowShare(true)} style={{ ...styles.button, ...styles.shareButton }}>
+          🌐 分享赛道
+        </button>
+        <button onClick={() => setShowLibrary(true)} style={{ ...styles.button, ...styles.libraryButton }}>
+          📚 地图库
+        </button>
+      </div>
+
       {/* 统计信息 */}
       <div style={styles.section}>
         <h3 style={styles.sectionTitle}>统计</h3>
@@ -250,6 +265,12 @@ export function Toolbar() {
           onClose={() => setShowBoundary(false)}
         />
       )}
+
+      {/* 分享对话框 */}
+      {showShare && <ShareDialog onClose={() => setShowShare(false)} />}
+
+      {/* 地图库 */}
+      {showLibrary && <TrackLibrary onClose={() => setShowLibrary(false)} />}
     </div>
   )
 }
@@ -602,6 +623,18 @@ const styles: Record<string, React.CSSProperties> = {
     background: '#FEF2F2',
     borderColor: '#FCA5A5',
     color: '#DC2626',
+    fontWeight: '600',
+  },
+  shareButton: {
+    background: '#EFF6FF',
+    borderColor: '#BFDBFE',
+    color: '#1E40AF',
+    fontWeight: '600',
+  },
+  libraryButton: {
+    background: '#F0FDF4',
+    borderColor: '#BBF7D0',
+    color: '#15803D',
     fontWeight: '600',
   },
   statsBox: {
