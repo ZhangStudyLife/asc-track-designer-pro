@@ -30,7 +30,19 @@
 
 ## 🚀 快速开始
 
-### Docker 部署（推荐）
+### 🆓 免费在线部署（推荐新手）
+
+无需服务器，一键部署到云端：
+
+| 平台 | 特点 | 部署难度 | 文档 |
+|------|------|----------|------|
+| **Railway** ⭐ | 数据持久化、不休眠、$5 免费额度 | ⭐⭐ | [部署指南](docs/FREE_DEPLOYMENT_COMPARISON.md#推荐方案一railwayapp最佳) |
+| **Render** | 最简单、会休眠、数据不持久 | ⭐ | [部署指南](docs/RENDER_DEPLOYMENT.md) |
+| **Fly.io** | 全球 CDN、性能优秀 | ⭐⭐⭐ | [部署指南](docs/FREE_DEPLOYMENT_COMPARISON.md#推荐方案二flyio) |
+
+**完整对比**：[免费部署方案对比](docs/FREE_DEPLOYMENT_COMPARISON.md)
+
+### Docker 部署（推荐生产环境）
 
 ```bash
 # 1. 克隆仓库
