@@ -3,7 +3,6 @@ package api
 import (
 	"encoding/json"
 	"fmt"
-	"io"
 	"net/http"
 	"strconv"
 	"time"
@@ -41,21 +40,31 @@ func (h *Handler) Health(w http.ResponseWriter, r *http.Request) {
 	})
 }
 
+type UploadRequest struct {
+	Name           string          `json:"name"`
+	Description    string          `json:"description"`
+	Tags           []string        `json:"tags"`
+	UploaderName   string          `json:"uploaderName"`
+	UploaderAvatar string          `json:"uploaderAvatar"`
+	Thumbnail      string          `json:"thumbnail"`
+	Project        json.RawMessage `json:"project"`
+}
+
 func (h *Handler) UploadTrack(w http.ResponseWriter, r *http.Request) {
 	// Limit upload size
 	r.Body = http.MaxBytesReader(w, r.Body, h.maxUploadMB*1024*1024)
 
-	body, err := io.ReadAll(r.Body)
-	if err != nil {
+	var req UploadRequest
+	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		writeJSON(w, http.StatusBadRequest, Response{
 			Success: false,
-			Error:   "Request too large",
+			Error:   "Invalid request format",
 		})
 		return
 	}
 
 	// Try to import
-	project, err := core.ImportLegacyJSON(body)
+	project, err := core.ImportLegacyJSON(req.Project)
 	if err != nil {
 		writeJSON(w, http.StatusBadRequest, Response{
 			Success: false,
@@ -64,17 +73,34 @@ func (h *Handler) UploadTrack(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Set ID and timestamps
+	// Set metadata from request
 	project.ID = GenerateID()
 	project.CreatedAt = time.Now()
 	project.UpdatedAt = time.Now()
 
-	if project.Name == "" {
+	if req.Name != "" {
+		project.Name = req.Name
+	} else if project.Name == "" {
 		project.Name = "Untitled Track"
 	}
 
-	// Save
-	if err := h.store.SaveTrack(project); err != nil {
+	if req.Description != "" {
+		project.Description = req.Description
+	}
+
+	// Set tags and uploader info
+	if len(req.Tags) > 0 {
+		project.Tags = req.Tags
+	}
+	if req.UploaderName != "" {
+		project.UploaderName = req.UploaderName
+	}
+	if req.UploaderAvatar != "" {
+		project.UploaderAvatar = req.UploaderAvatar
+	}
+
+	// Save (with thumbnail)
+	if err := h.store.SaveTrack(project, req.Thumbnail); err != nil {
 		writeJSON(w, http.StatusInternalServerError, Response{
 			Success: false,
 			Error:   "Failed to save track",
@@ -105,7 +131,32 @@ func (h *Handler) ListTracks(w http.ResponseWriter, r *http.Request) {
 
 	query := r.URL.Query().Get("q")
 
-	tracks, total, err := h.store.ListTracks(page, size, query)
+	// Parse tag filters (comma-separated)
+	var tags []string
+	if tagsParam := r.URL.Query().Get("tags"); tagsParam != "" {
+		for _, tag := range splitString(tagsParam, ",") {
+			tag = trimString(tag)
+			if tag != "" {
+				tags = append(tags, tag)
+			}
+		}
+	}
+
+	// Parse length filters (in cm)
+	minLength, _ := strconv.Atoi(r.URL.Query().Get("minLength"))
+	maxLength, _ := strconv.Atoi(r.URL.Query().Get("maxLength"))
+
+	// Use filtered query if filters are present
+	var tracks []core.TrackMetadata
+	var total int
+	var err error
+
+	if len(tags) > 0 || minLength > 0 || maxLength > 0 {
+		tracks, total, err = h.store.ListTracksWithFilters(page, size, query, tags, minLength, maxLength)
+	} else {
+		tracks, total, err = h.store.ListTracks(page, size, query)
+	}
+
 	if err != nil {
 		writeJSON(w, http.StatusInternalServerError, Response{
 			Success: false,
@@ -161,6 +212,12 @@ func (h *Handler) DownloadTrack(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Increment download count (non-blocking, don't fail if this fails)
+	if err := h.store.IncrementDownloads(id); err != nil {
+		// Log error but don't block download
+		fmt.Printf("Warning: failed to increment download count for track %s: %v\n", id, err)
+	}
+
 	w.Header().Set("Content-Type", "application/json")
 	w.Header().Set("Content-Disposition", fmt.Sprintf("attachment; filename=\"%s.json\"", project.Name))
 	json.NewEncoder(w).Encode(project)
@@ -186,4 +243,77 @@ func writeJSON(w http.ResponseWriter, status int, v interface{}) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(status)
 	json.NewEncoder(w).Encode(v)
+}
+
+// GetTags returns all unique tags used across tracks
+func (h *Handler) GetTags(w http.ResponseWriter, r *http.Request) {
+	tags, err := h.store.GetAllTags()
+	if err != nil {
+		writeJSON(w, http.StatusInternalServerError, Response{
+			Success: false,
+			Error:   "Failed to get tags",
+		})
+		return
+	}
+
+	// Include predefined tags
+	predefinedTags := []string{"初学者", "中级", "高级", "圆形", "8字形", "直线", "长距离", "短距离"}
+
+	// Merge with unique existing tags
+	tagSet := make(map[string]bool)
+	for _, tag := range predefinedTags {
+		tagSet[tag] = true
+	}
+	for _, tag := range tags {
+		tagSet[tag] = true
+	}
+
+	// Convert to slice
+	allTags := make([]string, 0, len(tagSet))
+	for tag := range tagSet {
+		allTags = append(allTags, tag)
+	}
+
+	writeJSON(w, http.StatusOK, Response{
+		Success: true,
+		Data: map[string]interface{}{
+			"tags":       allTags,
+			"predefined": predefinedTags,
+		},
+	})
+}
+
+// Helper functions
+func splitString(s, sep string) []string {
+	if s == "" {
+		return []string{}
+	}
+	var result []string
+	current := ""
+	for _, c := range s {
+		if string(c) == sep {
+			if current != "" {
+				result = append(result, current)
+				current = ""
+			}
+		} else {
+			current += string(c)
+		}
+	}
+	if current != "" {
+		result = append(result, current)
+	}
+	return result
+}
+
+func trimString(s string) string {
+	start := 0
+	end := len(s)
+	for start < end && (s[start] == ' ' || s[start] == '\t' || s[start] == '\n' || s[start] == '\r') {
+		start++
+	}
+	for end > start && (s[end-1] == ' ' || s[end-1] == '\t' || s[end-1] == '\n' || s[end-1] == '\r') {
+		end--
+	}
+	return s[start:end]
 }

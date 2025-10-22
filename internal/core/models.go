@@ -4,15 +4,24 @@ import "time"
 
 // TrackProject represents a complete track design
 type TrackProject struct {
-	ID        string    `json:"id"`
-	Name      string    `json:"name"`
-	Version   string    `json:"version"`
-	CreatedAt time.Time `json:"createdAt"`
-	UpdatedAt time.Time `json:"updatedAt"`
+	ID          string    `json:"id"`
+	Name        string    `json:"name"`
+	Description string    `json:"description,omitempty"`
+	Version     string    `json:"version"`
+	CreatedAt   time.Time `json:"createdAt"`
+	UpdatedAt   time.Time `json:"updatedAt"`
+
+	// Tags for categorization and filtering
+	Tags []string `json:"tags,omitempty"`
+
+	// Uploader information
+	UploaderID     string `json:"uploaderId,omitempty"`
+	UploaderName   string `json:"uploaderName,omitempty"`
+	UploaderAvatar string `json:"uploaderAvatar,omitempty"`
 
 	// New model: polygon boundary
 	Boundary *Boundary `json:"boundary,omitempty"`
-	
+
 	// Track skin/styling
 	Skin *TrackSkin `json:"skin,omitempty"`
 
@@ -65,10 +74,18 @@ type BOMSummary struct {
 
 // TrackMetadata for storage and listing
 type TrackMetadata struct {
-	ID          string    `json:"id"`
-	Name        string    `json:"name"`
-	UploaderID  string    `json:"uploaderId,omitempty"`
-	CreatedAt   time.Time `json:"createdAt"`
-	TotalPieces int       `json:"totalPieces"`
-	TotalLength string    `json:"totalLength"`
+	ID             string    `json:"id"`
+	Name           string    `json:"name"`
+	Description    string    `json:"description,omitempty"`
+	Tags           []string  `json:"tags,omitempty"`
+	UploaderID     string    `json:"uploaderId,omitempty"`
+	UploaderName   string    `json:"uploaderName,omitempty"`
+	UploaderAvatar string    `json:"uploaderAvatar,omitempty"`
+	CreatedAt      time.Time `json:"createdAt"`
+	TotalPieces    int       `json:"totalPieces"`
+	TotalLength    string    `json:"totalLength"`
+	TotalLengthCm  int       `json:"totalLengthCm"` // for filtering
+	Thumbnail      string    `json:"thumbnail,omitempty"`
+	Likes          int       `json:"likes"`
+	Downloads      int       `json:"downloads"`
 }

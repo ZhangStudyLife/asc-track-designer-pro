@@ -1,10 +1,11 @@
 module github.com/asc-lab/track-designer
 
-go 1.22
+go 1.24.0
 
 require (
 	github.com/go-chi/chi/v5 v5.0.12
 	github.com/go-chi/cors v1.2.1
+	golang.org/x/time v0.14.0
 	modernc.org/sqlite v1.29.5
 )
 

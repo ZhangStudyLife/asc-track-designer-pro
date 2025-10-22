@@ -1,0 +1,112 @@
+# ASC Track Designer - Caddy 反向代理配置
+# 文件位置: /etc/caddy/Caddyfile
+
+# 全局选项
+{
+    # 邮箱用于 Let's Encrypt
+    email admin@yourdomain.com
+}
+
+# 主站配置
+track.yourdomain.com {
+    # 自动 HTTPS（Caddy 自动申请和续期证书）
+
+    # 日志
+    log {
+        output file /var/log/caddy/trackd_access.log {
+            roll_size 100mb
+            roll_keep 5
+        }
+    }
+
+    # 安全头
+    header {
+        # HSTS
+        Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+        # 防止点击劫持
+        X-Frame-Options "SAMEORIGIN"
+
+        # 防止 MIME 类型嗅探
+        X-Content-Type-Options "nosniff"
+
+        # XSS 保护
+        X-XSS-Protection "1; mode=block"
+
+        # 不发送 Caddy 版本信息
+        -Server
+    }
+
+    # API 路由
+    handle /api/* {
+        # 反向代理到后端
+        reverse_proxy localhost:8080 {
+            # 传递真实客户端 IP
+            header_up X-Forwarded-For {remote_host}
+            header_up X-Real-IP {remote_host}
+
+            # 传递其他头
+            header_up Host {host}
+            header_up X-Forwarded-Proto {scheme}
+
+            # 健康检查
+            health_uri /api/health
+            health_interval 30s
+            health_timeout 5s
+        }
+    }
+
+    # 静态文件（前端）
+    handle {
+        reverse_proxy localhost:8080 {
+            header_up X-Forwarded-For {remote_host}
+            header_up X-Real-IP {remote_host}
+            header_up Host {host}
+            header_up X-Forwarded-Proto {scheme}
+        }
+
+        # 静态资源缓存
+        @static {
+            path *.js *.css *.png *.jpg *.jpeg *.gif *.svg *.ico *.woff *.woff2 *.ttf *.eot
+        }
+        header @static Cache-Control "public, max-age=86400"
+    }
+
+    # 速率限制（Caddy 插件，可选）
+    # 需要安装 caddy-ratelimit 插件
+    # rate_limit {
+    #     zone dynamic {
+    #         key {remote_host}
+    #         events 100
+    #         window 1m
+    #     }
+    # }
+}
+
+# 配置说明：
+#
+# 1. 自动 HTTPS：
+#    - Caddy 自动申请 Let's Encrypt 证书
+#    - 自动续期，无需手动管理
+#    - 自动重定向 HTTP 到 HTTPS
+#
+# 2. IP 传递：
+#    - {remote_host} 是客户端真实 IP
+#    - 应用层会从 X-Forwarded-For 提取
+#
+# 3. 健康检查：
+#    - Caddy 定期检查后端健康状态
+#    - 不健康时自动停止转发
+#
+# 4. 启动命令：
+#    caddy start --config /etc/caddy/Caddyfile
+#    caddy reload --config /etc/caddy/Caddyfile
+#
+# 5. Systemd 服务：
+#    systemctl enable caddy
+#    systemctl start caddy
+#
+# 注意：
+# - Caddy 的速率限制需要额外插件
+# - 建议主要依赖应用层的速率限制
+# - Caddy 配置比 Nginx 简单，适合小团队
